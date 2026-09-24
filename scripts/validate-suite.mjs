@@ -7,13 +7,13 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { auditClaimText } from '../generators/claim-guard.mjs';
+import { auditClaimText, auditEvidenceRegister } from '../generators/claim-guard.mjs';
 import { generateProductPage, generateSolutionPage, generateGuidePage } from '../generators/site-content-generator.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT_DIR = path.resolve(__dirname, '..');
 
-async function runValidation() {
+async function runValidation({ publish = false } = {}) {
   console.log('🔍 Starting Naike Export KB Suite Comprehensive Audit...\n');
 
   // 1. Audit sites.json
@@ -101,10 +101,30 @@ async function runValidation() {
   }
   console.log(`✅ Multi-Category Content Generator Smoke Test: PASSED (${testSites.length} categories verified)`);
 
-  console.log('\n🎉 ALL SUITE INTEGRITY CHECKS PASSED PERFECTLY!\n');
+  // 5. Validate the public-claim evidence gate.
+  const evidenceRaw = await fs.readFile(
+    path.join(ROOT_DIR, 'knowledge-base', '01_sources_permissions', 'evidence-register.json'),
+    'utf8'
+  );
+  const evidence = auditEvidenceRegister(JSON.parse(evidenceRaw));
+  if (!evidence.valid) {
+    throw new Error(`Evidence register is invalid: ${evidence.errors.join(' ')}`);
+  }
+  console.log(`✅ Evidence register structure: PASSED (${evidence.approved}/${evidence.total} public claims approved)`);
+
+  if (publish && !evidence.publication_ready) {
+    const ids = evidence.pending.map(item => item.claim_id).join(', ');
+    throw new Error(`Public release blocked: unapproved evidence records remain (${ids}).`);
+  }
+
+  if (!evidence.publication_ready) {
+    console.warn(`⚠️  Draft only: ${evidence.pending.length} evidence records still require company verification. Run npm run verify:publish before any public release.`);
+  }
+
+  console.log('\n🎉 SUITE STRUCTURE AND GENERATION CHECKS PASSED\n');
 }
 
-runValidation().catch(err => {
+runValidation({ publish: process.argv.includes('--publish') }).catch(err => {
   console.error('\n❌ VALIDATION ERROR:', err.message);
   process.exit(1);
 });

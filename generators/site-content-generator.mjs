@@ -8,7 +8,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import process from 'node:process';
 import { fileURLToPath } from 'node:url';
-import { auditClaimText } from './claim-guard.mjs';
+import { auditClaimText, auditEvidenceRegister } from './claim-guard.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -16,19 +16,32 @@ const ROOT_DIR = path.resolve(__dirname, '..');
 
 const SITES_PATH = path.join(ROOT_DIR, 'sites-matrix', 'sites.json');
 const PIM_PATH = path.join(ROOT_DIR, 'knowledge-base', '04_product_catalog', 'MASTER_PIM.json');
+const EVIDENCE_PATH = path.join(ROOT_DIR, 'knowledge-base', '01_sources_permissions', 'evidence-register.json');
 
 async function loadData() {
   const sitesRaw = await fs.readFile(SITES_PATH, 'utf8');
   const pimRaw = await fs.readFile(PIM_PATH, 'utf8');
+  const evidenceRaw = await fs.readFile(EVIDENCE_PATH, 'utf8');
   return {
     sitesData: JSON.parse(sitesRaw),
-    pimData: JSON.parse(pimRaw)
+    pimData: JSON.parse(pimRaw),
+    evidenceData: JSON.parse(evidenceRaw)
   };
+}
+
+function markDraft(output, format) {
+  if (typeof output === 'object') return { publication_status: 'draft_unverified', ...output };
+  const notice = 'DRAFT: commercial, compliance, factory, and product claims require approval in evidence-register.json before public use.';
+  if (format === 'html') {
+    return output.replace('<body>', `<body>\n  <div style="background:#7f1d1d;color:#fff;padding:0.75rem 1rem;text-align:center;font-weight:700">${notice}</div>`);
+  }
+  return `> **${notice}**\n\n${output}`;
 }
 
 export function generateProductPage(site, product, format = 'markdown') {
   const title = `${product.name} | Wholesale OEM Manufacturer | ${site.domain}`;
-  const metaDesc = `Direct factory OEM/ODM wholesale for ${product.name}. 100% food-grade compliant (${((product.specifications.food_contact_certifications || product.specifications.compliance_certifications || product.specifications.environmental_certifications || ["Standard Factory QA"]) || product.specifications.compliance_certifications || product.specifications.environmental_certifications || ["Standard Factory QA"]).join(', ')}), factory pricing from $${product.commercial_terms.tiered_fob_pricing_usd['10000_pcs'] || product.commercial_terms.tiered_fob_pricing_usd['5000_pcs'] || '2.00'}, MOQ ${product.commercial_terms.moq_standard} units.`;
+  const complianceTargets = product.specifications.food_contact_certifications || product.specifications.compliance_certifications || product.specifications.environmental_certifications || [];
+  const metaDesc = `Draft B2B sourcing profile for ${product.name}. Target compliance references: ${complianceTargets.join(', ') || 'pending'}. Product, price and MOQ data require evidence approval before publication.`;
   
   const schemaJsonLd = {
     "@context": "https://schema.org/",
@@ -45,17 +58,7 @@ export function generateProductPage(site, product, format = 'markdown') {
       "name": "Jinjiang Naike Gifts Co., Ltd.",
       "url": `https://${site.domain}`
     },
-    "material": product.materials.join(", "),
-    "offers": {
-      "@type": "AggregateOffer",
-      "priceCurrency": "USD",
-      "lowPrice": Object.values(product.commercial_terms.tiered_fob_pricing_usd).slice(-1)[0],
-      "highPrice": Object.values(product.commercial_terms.tiered_fob_pricing_usd)[0],
-      "offerCount": Object.keys(product.commercial_terms.tiered_fob_pricing_usd).length,
-      "priceValidUntil": "2027-12-31",
-      "availability": "https://schema.org/InStock",
-      "itemCondition": "https://schema.org/NewCondition"
-    }
+    "material": product.materials.join(", ")
   };
 
   if (format === 'json') {
@@ -97,7 +100,7 @@ ${JSON.stringify(schemaJsonLd, null, 2)}
 <body>
   <header>
     <div><strong>${site.name}</strong> · ${site.domain}</div>
-    <span class="badge">Disney FAMA & Coca-Cola SGP Audited Plant</span>
+    <span class="badge">Draft · Evidence Pending</span>
   </header>
   <main>
     <div class="product-grid">
@@ -128,7 +131,7 @@ ${JSON.stringify(schemaJsonLd, null, 2)}
           <tr><th>Unit Weight & Capacity</th><td>${product.dimensions.weight_g} g | ${product.dimensions.capacity_ml > 0 ? product.dimensions.capacity_ml + ' ml' : 'N/A'}</td></tr>
           <tr><th>Material Blend</th><td>${product.materials.join('; ')}</td></tr>
           <tr><th>Temperature Limits</th><td>${product.specifications.temperature_tolerance}</td></tr>
-          <tr><th>Compliance Certs</th><td>${((product.specifications.food_contact_certifications || product.specifications.compliance_certifications || product.specifications.environmental_certifications || ["Standard Factory QA"]) || product.specifications.compliance_certifications || product.specifications.environmental_certifications || ["Standard Factory QA"]).join(', ')}</td></tr>
+          <tr><th>Compliance Targets (Unverified)</th><td>${complianceTargets.join(', ') || 'Pending'}</td></tr>
         </table>
 
         <h3>Tiered Wholesale FOB Pricing (Xiamen Port)</h3>
@@ -157,8 +160,7 @@ ${JSON.stringify(schemaJsonLd, null, 2)}
   <div class="audit-bar">
     <p><strong>Jinjiang Naike Gifts Co., Ltd. (晋江市耐克礼品玩具有限公司)</strong></p>
     <p style="font-size:0.9rem; color:#64748b;">
-      20,000+ sqm manufacturing facility · Disney FAMA Facility Code: W128-4829-1 · Coca-Cola SGP Green Rating · 1.5MW Solar ESG Array<br>
-      FDA 21 CFR 177.1520 & German LFGB Verified · Xiamen Port Direct Logistics
+      Publication requires approved evidence for company identity, factory capacity, audits, certifications, ESG, commercial terms and product performance.
     </p>
   </div>
 </body>
@@ -187,7 +189,7 @@ ${metaDesc}
 
 ## 1. Product Specifications & Material Matrix
 
-| Parameter | Certified Specification |
+| Parameter | Draft Specification |
 |---|---|
 | **SKU ID** | \`${product.sku_id}\` |
 | **Material Formulation** | ${product.materials.join('; ')} |
@@ -231,9 +233,9 @@ ${Object.entries(product.commercial_terms.tiered_fob_pricing_usd).map(([tier, pr
 
 ## 5. Food Contact Safety & Social Audit Credentials
 
-- **Food Contact Compliance**: ${((product.specifications.food_contact_certifications || product.specifications.compliance_certifications || product.specifications.environmental_certifications || ["Standard Factory QA"]) || product.specifications.compliance_certifications || product.specifications.environmental_certifications || ["Standard Factory QA"]).join(', ')}
-- **Factory Social Responsibility**: Disney FAMA (Facility Code \`W128-4829-1\`), Coca-Cola SGP Green Rating, Sedex 4-Pillar SMETA.
-- **Low-Carbon Manufacturing**: 1.5MW rooftop solar PV offsetting 60% of factory production electricity.
+- **Compliance Targets (Unverified)**: ${complianceTargets.join(', ') || 'Pending'}
+- **Factory Audit Evidence**: Current report, scope, validity and public-use permission required.
+- **ESG Evidence**: Installation record, metered period and documented calculation method required.
 
 ---
 
@@ -264,10 +266,10 @@ Many overseas buyers encounter critical bottlenecks when importing:
 3. **Rigid MOQ & Long Tooling Latency**: Small and growing brands forced into 10,000-unit minimums with 60-day mold turnaround.
 
 ## 2. Naike's Precision Engineering Approach
-Jinjiang Naike Gifts Co., Ltd. solves these bottlenecks with our integrated 20,000 sqm manufacturing ecosystem:
-- **Micron-Level Tolerance Injection**: 36 automated servo injection presses maintaining ±0.05mm sealing gasket groove tolerance.
-- **1.5 MW Solar-Powered Clean Production**: Ensuring documented Scope 1/2 emissions reductions for global ESG procurement mandates.
-- **Disney FAMA & Coca-Cola SGP Audited Facility**: 100% compliant labor, ethical, environmental, and physical safety standards.
+The proposed sourcing workflow requires the following company evidence before publication:
+- **Manufacturing capability**: Signed facility profile, equipment ledger and recent production records.
+- **ESG performance**: Installation record, metered reporting period and documented calculation method.
+- **Social audits**: Current report, applicable scope, validity and public-use permission.
 
 ## 3. Step-by-Step Customization Roadmap
 \`\`\`text
@@ -310,12 +312,12 @@ This guide breaks down everything procurement directors, Amazon private label br
 
 ## 3. Factory Social Compliance Audits: What to Demand
 Always verify that your supplier holds valid third-party social audits:
-- **Disney FAMA**: Check active authorization code (e.g. Naike FAMA: \`W128-4829-1\`).
+- **Disney FAMA**: Request the current authorization letter and confirm facility, scope, validity and public-use permission.
 - **Coca-Cola SGP**: Verify Green Rating status.
 - **Sedex SMETA**: Inspect 4-pillar labor, safety, environmental, and business ethics reports.
 
 ## 4. How to Calculate Container Economics (40HQ)
-To minimize ocean freight cost per unit, optimize cubic meter loading. Our engineering team designs nested geometry and lightweight corrugated master shippers that load up to 38,500 units per 40HQ container, saving up to $0.12 per unit in landed freight costs.
+To minimize ocean freight cost per unit, calculate load quantity from the approved unit dimensions, packing method, carton size, gross weight and container limits. Do not publish a load quantity or freight saving until the SKU calculation is reviewed.
 
 ---
 *Published by the Engineering Editorial Team at [${site.domain}](https://${site.domain}) · Jinjiang Naike Gifts Co., Ltd.*
@@ -336,8 +338,9 @@ async function main() {
   const skuId = getArg('--sku');
   const format = getArg('--format') || 'markdown';
   const outputPath = getArg('--output');
+  const publish = args.includes('--publish');
 
-  const { sitesData, pimData } = await loadData();
+  const { sitesData, pimData, evidenceData } = await loadData();
   const site = sitesData.sites.find(s => s.id === siteId);
   if (!site) {
     console.error(`Error: Site ID "${siteId}" not found in sites.json`);
@@ -374,6 +377,12 @@ async function main() {
     }
   }
 
+  const evidence = auditEvidenceRegister(evidenceData);
+  if (publish && !evidence.publication_ready) {
+    throw new Error(`Public generation blocked: ${evidence.pending.length} evidence records are not approved.`);
+  }
+  if (!publish) output = markDraft(output, format);
+
   if (outputPath) {
     await fs.writeFile(outputPath, typeof output === 'string' ? output : JSON.stringify(output, null, 2), 'utf8');
     console.log(`Successfully generated ${pageType} page for ${site.domain} -> ${outputPath}`);
@@ -387,5 +396,8 @@ async function main() {
 }
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
-  main().catch(console.error);
+  main().catch(err => {
+    console.error(`Generation failed: ${err.message}`);
+    process.exitCode = 1;
+  });
 }

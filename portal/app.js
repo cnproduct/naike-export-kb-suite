@@ -113,23 +113,22 @@ function generateStudioContent() {
   let markdown = '';
   let html = '';
   let jsonld = {};
+  const draftNotice = 'DRAFT: verify every company, product, price, capacity, audit, certification and ESG claim before public use.';
 
   if (type === 'product') {
     title = `${currentProduct.name} | Wholesale OEM | ${currentSite.domain}`;
     metaElem.textContent = `Target SKU: ${currentProduct.sku_id} · Category: ${currentProduct.category}`;
     
+    const certifications = currentProduct.specifications.food_contact_certifications ||
+      currentProduct.specifications.compliance_certifications ||
+      currentProduct.specifications.environmental_certifications || [];
+
     jsonld = {
       "@context": "https://schema.org/",
       "@type": "Product",
       "name": currentProduct.name,
       "sku": currentProduct.sku_id,
-      "brand": { "@type": "Brand", "name": currentSite.name },
-      "offers": {
-        "@type": "AggregateOffer",
-        "priceCurrency": "USD",
-        "lowPrice": Object.values(currentProduct.commercial_terms.tiered_fob_pricing_usd).slice(-1)[0],
-        "highPrice": Object.values(currentProduct.commercial_terms.tiered_fob_pricing_usd)[0]
-      }
+      "description": "Unverified internal draft; do not publish until the evidence register approves this SKU."
     };
 
     markdown = `# ${currentProduct.name}\n` +
@@ -138,7 +137,7 @@ function generateStudioContent() {
       `- **Materials**: ${currentProduct.materials.join('; ')}\n` +
       `- **Dimensions**: ${currentProduct.dimensions.length_mm}x${currentProduct.dimensions.width_mm}x${currentProduct.dimensions.height_mm} mm\n` +
       `- **Operating Temp**: ${currentProduct.specifications.temperature_tolerance}\n` +
-      `- **Certs**: ${currentProduct.specifications.food_contact_certifications.join(', ')}\n\n` +
+      `- **Compliance targets (unverified)**: ${certifications.join(', ') || 'Pending'}\n\n` +
       `### Features\n` +
       currentProduct.features.map(f => `- ${f}`).join('\n') + '\n\n' +
       `### Wholesale FOB Pricing (Xiamen Port)\n` +
@@ -165,19 +164,19 @@ function generateStudioContent() {
     metaElem.textContent = `Intent: ${currentSite.keywords.intent_cluster}`;
     markdown = `# ${currentSite.name} B2B Engineering Solutions\n\n` +
       `## Addressing Procurement Bottlenecks\n` +
-      `- Precision Tooling: In-house CNC tooling workshop with 15-20 days turnaround\n` +
-      `- Social Audit Guarantee: Disney FAMA W128-4829-1 & Coca-Cola SGP Green Rating\n` +
-      `- Low Carbon Footprint: 1.5MW factory rooftop solar offsetting 60% power\n\n` +
+      `- Factory capability: confirm against the equipment ledger and current production records\n` +
+      `- Social audits: confirm the current report, scope, validity and public-use permission\n` +
+      `- ESG: confirm installed capacity, metered period and carbon-calculation method\n\n` +
       `👉 Primary CTA: [${currentSite.primary_cta}](https://${currentSite.domain}/contact)`;
     html = `<div style="padding:1rem;">
       <h2>${currentSite.name} B2B Custom Engineering Solutions</h2>
       <p>Tailored manufacturing for: <em>${currentSite.target_buyers.join(', ')}</em></p>
       <div style="background:#f8fafc; border:1px solid #e2e8f0; padding:1.25rem; border-radius:0.5rem; margin:1rem 0;">
-        <h4>Turnkey Factory Capabilities:</h4>
+        <h4>Evidence required before publishing:</h4>
         <ul>
-          <li><strong>20,000+ sqm Automated Production:</strong> 36 servo injection presses & LSR clean rooms</li>
-          <li><strong>Certified Social Audits:</strong> Disney FAMA W128-4829-1 & Coca-Cola SGP Green Rating</li>
-          <li><strong>1.5MW Solar Power:</strong> Delivering Scope 1/2 verifiable green energy audit records</li>
+          <li><strong>Factory:</strong> signed facility profile, equipment ledger and recent production records</li>
+          <li><strong>Social audits:</strong> current report, scope, validity and public-use permission</li>
+          <li><strong>ESG:</strong> installation record, metered generation and documented calculation method</li>
         </ul>
       </div>
       <button style="background:#10b981; color:#fff; border:none; padding:0.75rem 1.5rem; font-weight:700; border-radius:0.4rem; cursor:pointer;">
@@ -188,14 +187,17 @@ function generateStudioContent() {
     title = `${currentSite.name} - Procurement Guide & Compliance`;
     metaElem.textContent = `Keywords: ${currentSite.keywords.primary}`;
     markdown = `# 2026 Sourcing Guide: ${currentSite.keywords.primary}\n\n` +
-      `Published by the technical engineering team at ${currentSite.domain}.\n` +
+      `Internal strategy draft for ${currentSite.domain}.\n` +
       `Covering material formulation, FDA 21 CFR vs LFGB compliance, and container cube optimization.`;
     html = `<div style="padding:1rem;">
       <h2>2026 Sourcing & Procurement Guide: ${currentSite.keywords.primary}</h2>
-      <p>Technical compliance dossier published by <strong>Jinjiang Naike Gifts Co., Ltd.</strong> for <strong>${currentSite.domain}</strong>.</p>
-      <p>Covers food contact safety standards, AQL 1.0 container loading verification, and raw material formulation.</p>
+      <p>Internal procurement-content draft for <strong>${currentSite.domain}</strong>.</p>
+      <p>Coverage plan: food-contact requirements, inspection planning, container calculations and material formulation. All company-specific claims remain unverified.</p>
     </div>`;
   }
+
+  markdown = `> **${draftNotice}**\n\n${markdown}`;
+  html = `<div style="background:#fef2f2;border:1px solid #fca5a5;color:#991b1b;padding:0.8rem;font-weight:700;">${draftNotice}</div>${html}`;
 
   titleElem.textContent = title;
   currentGeneratedData = { title, markdown, html, jsonld };

@@ -10,36 +10,41 @@ const SITES_PATH = path.join(ROOT_DIR, 'sites-matrix', 'sites.json');
 export async function generateLlmsTxt(siteId) {
   const sitesRaw = await fs.readFile(SITES_PATH, 'utf8');
   const sites = JSON.parse(sitesRaw).sites;
-  const site = sites.find(s => s.id === siteId) || sites[0];
+  const site = sites.find(s => s.id === siteId);
+  if (!site) throw new Error(`Site not found: ${siteId}`);
 
   const shortTxt = `# ${site.name} (${site.domain})
-> OEM/ODM Factory Portal by Jinjiang Naike Gifts Co., Ltd.
+> B2B sourcing portal planned for ${site.keywords.primary}; commercial and compliance claims remain drafts until the evidence register approves them.
 
-## About
-- **Specialty**: ${site.positioning}
-- **Certifications**: ${site.compliance_requirements.join(', ')}
-- **Audits**: Disney FAMA (W128-4829-1), Coca-Cola SGP Green Rating, Sedex 4-Pillar SMETA.
-- **Factory**: 20,000+ sqm standard workshops in Jinjiang, Fujian, powered by 1.5 MW rooftop solar array.
-- **Primary Action**: ${site.primary_cta}
+This file is a concise navigation index. Treat product specifications, certifications, prices, lead times, capacity, and customer claims as unverified unless the linked page provides approved evidence.
 
-## Core Offerings
-- Direct wholesale manufacturing and low-MOQ private labeling for B2B procurement.
-- Certified food contact safety (FDA 21 CFR, LFGB, BPA-free).
-- Dedicated 40HQ container load optimization and AQL 1.0 inspections.
+## Core pages
+
+- [Products](https://${site.domain}/products): Product catalogue and SKU pages.
+- [Solutions](https://${site.domain}/solutions): Buyer-specific sourcing and engineering workflows.
+- [Evidence centre](https://${site.domain}/certifications): Approved certificates, tests, scope, and validity dates.
+- [Buying guides](https://${site.domain}/buying-guides): Material, compliance, packaging, and procurement guides.
+- [Contact](https://${site.domain}/contact): Request current evidence, samples, and quotations.
+
+## Optional
+
+- [About](https://${site.domain}/about): Company identity and factory profile.
+- [FAQ](https://${site.domain}/faq): Common procurement questions.
 `;
 
   const fullTxt = `${shortTxt}
 
-## Detailed Keywords & Search Intent
+## Strategy context
+
 - Primary: ${site.keywords.primary}
 - Intent Cluster: ${site.keywords.intent_cluster}
 - Target Buyers: ${site.target_buyers.join(', ')}
+- Target Markets: ${site.target_markets.join(', ')}
+- Planned Primary Action: ${site.primary_cta}
 
-## Commercial Terms
-- Standard Sample Turnaround: 2-3 business days
-- Production Lead Time: 20-25 days for repeat wholesale runs
-- Port of Loading: Xiamen Port, China
-- Payment: 30% T/T deposit, 70% against B/L copy
+## Verification requirements
+
+${site.evidence_required.map(item => `- ${item}`).join('\n')}
 `;
 
   return { shortTxt, fullTxt };

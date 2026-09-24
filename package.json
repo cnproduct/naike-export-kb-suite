@@ -5,7 +5,9 @@
   "type": "module",
   "scripts": {
     "verify": "node scripts/validate-suite.mjs",
+    "verify:publish": "node scripts/validate-suite.mjs --publish",
     "test": "node scripts/test-generation.mjs",
+    "test:evidence": "node scripts/test-evidence.mjs",
     "generate:content": "node generators/site-content-generator.mjs",
     "generate:sitemap": "node generators/sitemap-generator.mjs",
     "generate:llms": "node generators/llms-generator.mjs",

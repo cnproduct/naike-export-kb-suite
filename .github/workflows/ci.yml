@@ -24,5 +24,14 @@ jobs:
       - name: Test Batch Content Generation Across 20 Sites
         run: node scripts/test-generation.mjs
 
+      - name: Test Evidence Publication Gate
+        run: node scripts/test-evidence.mjs
+
       - name: Test MCP Server Interface
         run: node mcp/index.mjs --test
+
+      - name: Check Documentation Links
+        uses: lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8 # v2
+        with:
+          args: --no-progress './README.md' './docs/**/*.md'
+          fail: true

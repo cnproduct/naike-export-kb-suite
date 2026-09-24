@@ -3,19 +3,21 @@
 [![CI Suite Verification](https://github.com/cnproduct/naike-export-kb-suite/actions/workflows/ci.yml/badge.svg)](https://github.com/cnproduct/naike-export-kb-suite/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Node.js: >=20](https://img.shields.io/badge/Node.js-%3E%3D20-green.svg)](https://nodejs.org/)
-[![Factory Audits](https://img.shields.io/badge/Disney_FAMA-W128--4829--1-blue.svg)](https://www.disney.com)
-[![ESG Power](https://img.shields.io/badge/Solar_ESG-1.5MW_Green_Factory-success.svg)](https://www.econaike.com)
+[![Publication: blocked](https://img.shields.io/badge/publication-blocked_until_evidence-red.svg)](knowledge-base/01_sources_permissions/evidence-register.json)
 
 > **晋江市耐克礼品玩具有限公司 (Jinjiang Naike Gifts Co., Ltd.)** 20 个海外独立站站群战略的统一出口知识中台与多品类 B2B 网页内容自动化生产引擎。
 > 依据《耐科公司 20 个独立站站群战略与域名关键词规划》及《外贸出口企业 AI 知识库标准框架 V3.0》深度定制。
+
+> [!CAUTION]
+> 当前仓库是**待企业核验的策略草稿**。产品参数、价格、MOQ、交期、产能、验厂、认证、ESG 与客户关系等内容不得直接对外发布。先补齐 [`evidence-register.json`](knowledge-base/01_sources_permissions/evidence-register.json)，再运行 `npm run verify:publish`。
 
 ---
 
 ## 🌟 核心设计理念：统一中台，分化前台
 
 耐科规划的 20 个海外独立站**绝不是换域名、换标题的换皮复制站**。本套系统构建了：
-1. **统一中台 (Unified Core)**: 集中管理 PIM 主数据、权威验厂凭证（Disney FAMA / 可口可乐 SGP）、光伏绿电 ESG 证明、AQL 1.0 质检标准、8大不可突破经营红线与阶梯商业规则；
-2. **分化前台 (Differentiated Frontends)**: 针对 20 个细分买家任务，自动装配并派生各站点独特的 ICP 定位、主 CTA、35 页首发内容蓝图、技术解构与 Schema.org 结构化数据，确保 100% 契合 Google 搜索实用内容标准。
+1. **统一中台 (Unified Core)**: 集中管理 PIM 草稿、证据状态、经营红线与商业规则；未通过证据闸门的字段只能用于内部评审；
+2. **分化前台 (Differentiated Frontends)**: 针对 20 个细分买家任务，派生各站点独特的 ICP 定位、主 CTA、35 页首发内容蓝图与 Schema.org 草稿。
 
 ---
 
@@ -53,11 +55,11 @@ naike-export-kb-suite/
 ├── .github/workflows/          # 自动化 CI 验证与 GitHub Pages 部署工作流
 ├── knowledge-base/             # 21 个标准出口企业知识库模块
 │   ├── 00_kb_governance/       # 业务速查卡、知识地图、新人7天路径、缺口队列
-│   ├── 01_sources_permissions/ # 证书台账 (Disney/Coke/Sedex)、财务防篡改 SOP
-│   ├── 02_company_identity/    # 20,000㎡ 厂区实力、多版本官方简介、禁止夸大项
+│   ├── 01_sources_permissions/ # 公开口径、证据台账与发布审批状态
+│   ├── 02_company_identity/    # 公司身份与待核验的工厂能力草稿
 │   ├── 04_product_catalog/     # MASTER_PIM.json (全品类主力 SKU 主数据)
-│   ├── 05_manufacturing_quality# 36台注塑机、AQL 1.0抽检、1.5MW屋顶光伏
-│   ├── 06_certification_compliance # FDA, LFGB, EU 10/2011, 迪士尼使用边界
+│   ├── 05_manufacturing_quality# 制造与质量能力草稿、待补测试记录
+│   ├── 06_certification_compliance # 目标市场合规要求与待核验证据
 │   ├── 07_commercial_delivery/ # 阶梯 MOQ、模具费返还政策、零 OA 风险控制
 │   ├── 15_inquiry_qualification# 10步询盘速检表、L1/L2/L3 下钻提问法
 │   ├── 16_solution_quotation/  # Good/Better/Best 三档报价方案
@@ -101,6 +103,14 @@ cd naike-export-kb-suite
 npm run verify
 ```
 
+`npm run verify` 只检查结构和生成器。公开发布前必须通过：
+
+```bash
+npm run verify:publish
+```
+
+当任一证据记录未批准、缺少来源或已过期时，此命令会直接阻断发布。
+
 ### 3. 多品类独立站内容快速生成 (CLI)
 
 #### 生成产品详情页 (Product Page):
@@ -132,7 +142,7 @@ npm run start:portal
 浏览器访问 `http://localhost:8080`，即可：
 - 🔍 交互式筛选与搜索 20 个独立站战略档案与关键词；
 - ⚡ 实时选择任意独立站与品类，一键生成视觉渲染、Markdown 与 Schema.org JSON-LD；
-- 🛡️ 查验 Disney FAMA、Coca-Cola SGP 及 1.5MW 光伏 ESG 权威凭据；
+- 🛡️ 查看验厂、合规、ESG 等声明的待补证据与批准状态；
 - 👥 切换阅读 6 大岗位的业务推进作战手册。
 
 ### 5. 启动 Model Context Protocol (MCP) 服务
@@ -145,6 +155,7 @@ npm run start:mcp
 - `get_site_details`: 获取特定站点的 ICP、护城河与 35 页蓝图；
 - `generate_site_page`: 自动生成产品页、解决方案页或采购指南；
 - `audit_claim`: 执行 ClaimGuard 文本合规检查，阻断虚假宣传。
+- `get_publication_readiness`: 返回未核验证据清单与公开发布状态。
 
 ---
 
@@ -154,14 +165,15 @@ npm run start:mcp
 1. **反洗绿 (Anti-Greenwashing)**: 严禁将麦秆复合材料（含35%麦秆+65%食品级PP）宣称为 “100% Biodegradable” 或 “Ocean Degradable”，必须明确标注入工业堆肥条件；
 2. **知识产权区隔 (Trademark Safeguards)**: 
    - 耐科（Naike / EcoNaike）为晋江市耐克礼品玩具有限公司商号，与美国运动品牌 Nike, Inc. 没有任何关联；
-   - Disney 标识必须明确为“合格制造商设施资质（Disney FAMA W128-4829-1）”，不宣称自身为 Disney 商标权利人；
+   - Disney 等第三方标识只能在有效文件、适用范围和对外使用权限均已确认时使用；
    - 严禁在洞洞鞋配饰中将受保护商标 “Crocs™” 用作品类名，统一规范为 “Clog shoe charms”。
 
 ---
 
 ## 📈 持续演进与 GitHub 交付
 
-- 本仓库已配置完整 GitHub Actions：
+- 本仓库已配置 GitHub Actions：
   - `ci.yml`: 自动化执行全库 10 项独立性准则审计与 20 站生成测试；
-  - `pages.yml`: 自动化将 `portal/` 可视化工作室发布至 GitHub Pages。
+  - `pages.yml`: 仅手动触发，且只在 `verify:publish` 通过后才发布 `portal/`。
+- GitHub 开源项目选型、许可证与取舍见 [`docs/GITHUB_PROJECT_RESEARCH.md`](docs/GITHUB_PROJECT_RESEARCH.md)。
 - 许可协议：[MIT License](LICENSE) © 2026 晋江市耐克礼品玩具有限公司 & cnproduct

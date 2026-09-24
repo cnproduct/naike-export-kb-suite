@@ -8,7 +8,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import readline from 'node:readline';
-import { auditClaimText } from '../generators/claim-guard.mjs';
+import { auditClaimText, auditEvidenceRegister } from '../generators/claim-guard.mjs';
 import { generateProductPage, generateSolutionPage, generateGuidePage } from '../generators/site-content-generator.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -16,6 +16,7 @@ const ROOT_DIR = path.resolve(__dirname, '..');
 
 const SITES_PATH = path.join(ROOT_DIR, 'sites-matrix', 'sites.json');
 const PIM_PATH = path.join(ROOT_DIR, 'knowledge-base', '04_product_catalog', 'MASTER_PIM.json');
+const EVIDENCE_PATH = path.join(ROOT_DIR, 'knowledge-base', '01_sources_permissions', 'evidence-register.json');
 
 async function getSites() {
   const raw = await fs.readFile(SITES_PATH, 'utf8');
@@ -25,6 +26,11 @@ async function getSites() {
 async function getPim() {
   const raw = await fs.readFile(PIM_PATH, 'utf8');
   return JSON.parse(raw).products;
+}
+
+async function getEvidenceReadiness() {
+  const raw = await fs.readFile(EVIDENCE_PATH, 'utf8');
+  return auditEvidenceRegister(JSON.parse(raw));
 }
 
 const TOOLS = [
@@ -74,6 +80,11 @@ const TOOLS = [
       },
       required: ["text"]
     }
+  },
+  {
+    name: "get_publication_readiness",
+    description: "Check whether company, product, compliance, performance, and commercial claims have approved source evidence for public use.",
+    inputSchema: { type: "object", properties: {} }
   }
 ];
 
@@ -106,7 +117,7 @@ async function handleToolCall(name, args) {
   if (name === "get_site_details") {
     const site = sites.find(s => s.id === args.site_id || s.domain === args.site_id);
     if (!site) throw new Error(`Site not found: ${args.site_id}`);
-    return site;
+    return { publication_status: 'draft_unverified', ...site };
   }
 
   if (name === "generate_site_page") {
@@ -130,6 +141,7 @@ async function handleToolCall(name, args) {
     }
 
     const audit = auditClaimText(typeof content === "string" ? content : JSON.stringify(content));
+    const evidence = await getEvidenceReadiness();
     return {
       site_id: site.id,
       domain: site.domain,
@@ -137,12 +149,19 @@ async function handleToolCall(name, args) {
       format: args.format || "markdown",
       claim_guard_passed: audit.valid,
       compliance_notes: audit.issues,
+      publication_ready: evidence.publication_ready,
+      pending_evidence: evidence.pending,
       content
     };
   }
 
   if (name === "audit_claim") {
     return auditClaimText(args.text);
+  }
+
+
+  if (name === "get_publication_readiness") {
+    return getEvidenceReadiness();
   }
 
   throw new Error(`Unknown tool: ${name}`);

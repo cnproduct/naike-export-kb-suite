@@ -34,4 +34,7 @@ async function main() {
   console.log(`✅ Successfully generated sample HTML & Markdown for all 20 sites in ${testOutputDir}`);
 }
 
-main().catch(console.error);
+main().catch(err => {
+  console.error(`Generation test failed: ${err.message}`);
+  process.exitCode = 1;
+});
