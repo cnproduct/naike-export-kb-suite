@@ -1,0 +1,29 @@
+{
+  "name": "naike-export-kb-suite",
+  "version": "1.0.0",
+  "description": "Jinjiang Naike Gifts Co., Ltd. (耐科公司) 20-Site B2B Export Knowledge Base Suite & Multi-Category Website Content Generation Engine",
+  "type": "module",
+  "scripts": {
+    "verify": "node scripts/validate-suite.mjs",
+    "test": "node scripts/test-generation.mjs",
+    "generate:content": "node generators/site-content-generator.mjs",
+    "generate:sitemap": "node generators/sitemap-generator.mjs",
+    "generate:llms": "node generators/llms-generator.mjs",
+    "start:mcp": "node mcp/index.mjs",
+    "start:portal": "npx serve portal -l 8080"
+  },
+  "keywords": [
+    "b2b",
+    "export",
+    "knowledge-base",
+    "tableware",
+    "bento-box",
+    "silicone-baby",
+    "seo",
+    "content-generator",
+    "mcp",
+    "jinjiang-naike"
+  ],
+  "author": "Jinjiang Naike Gifts Co., Ltd. AI Innovation Team & RenWork AI",
+  "license": "MIT"
+}

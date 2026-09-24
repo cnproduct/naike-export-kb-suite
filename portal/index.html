@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naike Export KB Suite | 20-Site B2B Content & Strategy Studio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-brand">
+      <h1>🌱 Naike Export KB Suite <span>(晋江市耐克礼品玩具有限公司)</span></h1>
+      <p>20-Site B2B Export Strategy & AI Content Generation Engine · V4.0</p>
+    </div>
+    <div class="header-badges">
+      <span class="tag-badge">Disney FAMA W128-4829-1</span>
+      <span class="tag-badge">Coca-Cola SGP Green</span>
+      <span class="tag-badge">1.5MW Solar ESG Factory</span>
+    </div>
+  </header>
+
+  <nav class="tab-nav">
+    <button class="tab-btn active" onclick="switchTab('matrix')">📊 20-Site Matrix & Strategy</button>
+    <button class="tab-btn" onclick="switchTab('studio')">✍️ Multi-Category Content Studio</button>
+    <button class="tab-btn" onclick="switchTab('roles')">👥 6 Role-Based Playbooks</button>
+    <button class="tab-btn" onclick="switchTab('vault')">🛡️ Evidence & Compliance Vault</button>
+    <button class="tab-btn" onclick="switchTab('kb')">📚 21-Module Knowledge Base</button>
+  </nav>
+
+  <main class="portal-container">
+    <!-- Tab 1: 20 Sites Matrix -->
+    <section id="matrix" class="tab-section active">
+      <div class="filter-bar">
+        <div class="filter-group">
+          <span class="filter-label">Group:</span>
+          <select id="filter-group" class="filter-select" onchange="renderSites()">
+            <option value="ALL">All Groups (20 Sites)</option>
+            <option value="A">A组: 企业与核心资产站 (2)</option>
+            <option value="B">B组: 产品/材料/场景垂直站 (12)</option>
+            <option value="C">C组: 礼赠/IP/定制制造站 (4)</option>
+            <option value="D">D组: 高价值买家解决方案站 (2)</option>
+          </select>
+
+          <span class="filter-label">Priority:</span>
+          <select id="filter-priority" class="filter-select" onchange="renderSites()">
+            <option value="ALL">All Priorities</option>
+            <option value="P0">P0 (收入核心)</option>
+            <option value="P1">P1 (高确定性开拓)</option>
+            <option value="P2">P2 (高匹配拓展)</option>
+            <option value="P3">P3 (证据齐备后放行)</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <input type="text" id="search-sites" class="search-input" placeholder="Search domain, keyword, market..." oninput="renderSites()">
+        </div>
+      </div>
+
+      <div id="sites-grid" class="sites-grid">
+        <!-- Rendered by app.js -->
+      </div>
+    </section>
+
+    <!-- Tab 2: Content Studio -->
+    <section id="studio" class="tab-section">
+      <div class="studio-layout">
+        <aside class="studio-sidebar">
+          <h3>⚡ Rapid Content Generator</h3>
+          <p style="font-size:0.85rem; color:#64748b;">Select any vertical category to generate production-ready B2B content.</p>
+
+          <div class="form-group">
+            <label for="studio-site-select">Target Website / Category:</label>
+            <select id="studio-site-select" class="form-control" onchange="onStudioSiteChange()">
+              <!-- Populated by app.js -->
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="studio-page-type">Page Type to Generate:</label>
+            <select id="studio-page-type" class="form-control" onchange="onStudioTypeChange()">
+              <option value="product">Product Detail Page (B2B SKU)</option>
+              <option value="solution">B2B Technical Solution Page</option>
+              <option value="guide">In-Depth Buying & Sourcing Guide</option>
+              <option value="faq">Multilingual FAQ Page</option>
+              <option value="trust">Factory & Certification Vault Page</option>
+            </select>
+          </div>
+
+          <div class="form-group" id="sku-select-group">
+            <label for="studio-sku-select">Select Target SKU:</label>
+            <select id="studio-sku-select" class="form-control">
+              <!-- Populated by app.js -->
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>ClaimGuard Audit Status:</label>
+            <div id="claim-guard-badge" style="padding:0.5rem; background:#ecfdf5; color:#047857; border-radius:6px; font-size:0.85rem; font-weight:600;">
+              ✓ Claims Verified: No Banned Overstatements
+            </div>
+          </div>
+
+          <button class="btn-primary-sm" style="padding:0.75rem; font-size:0.95rem; border-radius:0.5rem;" onclick="generateStudioContent()">
+            🚀 Generate Page Content Now
+          </button>
+        </aside>
+
+        <section class="studio-main">
+          <div class="studio-header">
+            <div>
+              <strong id="studio-preview-title">Generated Preview</strong>
+              <span id="studio-preview-meta" style="font-size:0.82rem; color:#64748b; margin-left:0.5rem;"></span>
+            </div>
+            <div class="output-tabs">
+              <button class="output-tab-btn active" onclick="switchOutputFormat('rendered')">Visual Render</button>
+              <button class="output-tab-btn" onclick="switchOutputFormat('markdown')">Markdown</button>
+              <button class="output-tab-btn" onclick="switchOutputFormat('jsonld')">Schema.org JSON-LD</button>
+              <button class="output-tab-btn" onclick="copyContent()">📋 Copy</button>
+            </div>
+          </div>
+
+          <div id="studio-content-view" class="studio-content-view">
+            <!-- Content Output -->
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <!-- Tab 3: 6 Roles -->
+    <section id="roles" class="tab-section">
+      <div style="background:#fff; border-radius:0.75rem; padding:1.5rem; border:1px solid #e2e8f0;">
+        <h2>👥 6 Role-Based Strategic Playbooks</h2>
+        <p style="color:#64748b; margin-bottom:1.5rem;">Tailored views configured according to RenWork Export Framework V3.0.</p>
+        <div style="display:flex; gap:0.5rem; margin-bottom:1.5rem; flex-wrap:wrap;">
+          <button class="btn-sm active" onclick="showRole('management')">👔 老板/管理层 (Management)</button>
+          <button class="btn-sm" onclick="showRole('sales_director')">📈 销售总监 (Sales Director)</button>
+          <button class="btn-sm" onclick="showRole('junior_sales')">🌱 新人业务 (Junior Sales)</button>
+          <button class="btn-sm" onclick="showRole('senior_sales')">🎯 资深业务 (Senior Sales)</button>
+          <button class="btn-sm" onclick="showRole('marketing')">🌐 独立站运营 (Marketing & SEO)</button>
+          <button class="btn-sm" onclick="showRole('operations_quality')">🔍 品质与跟单 (QC & Ops)</button>
+        </div>
+        <div id="role-content-area" style="background:#f8fafc; padding:1.5rem; border-radius:0.5rem; border:1px solid #cbd5e1; line-height:1.7;">
+          <!-- Populated by app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Tab 4: Vault -->
+    <section id="vault" class="tab-section">
+      <div class="vault-grid">
+        <div class="vault-card">
+          <h3>🏰 Disney FAMA Social Compliance</h3>
+          <p><strong>Facility Code:</strong> <code>W128-4829-1</code></p>
+          <p><strong>Approved Scope:</strong> Authorized factory for licensed novelty, tableware and promotional items production for Disney worldwide licensees.</p>
+          <p><strong>Audit Standard:</strong> Disney International Labor Standards (ILS).</p>
+        </div>
+        <div class="vault-card">
+          <h3>🥤 Coca-Cola SGP Green Rating</h3>
+          <p><strong>Rating Status:</strong> <code>GREEN (Zero Critical Findings)</code></p>
+          <p><strong>Audit Standard:</strong> Coca-Cola Supplier Guiding Principles (SGP).</p>
+          <p><strong>Scope:</strong> Safe working environment, fair labor, environmental protection.</p>
+        </div>
+        <div class="vault-card">
+          <h3>☀️ 1.5 MW Solar ESG Green Factory</h3>
+          <p><strong>Installed Capacity:</strong> 1.5 MegaWatts DC</p>
+          <p><strong>Green Generation:</strong> 1.8 Million kWh annually</p>
+          <p><strong>Carbon Offset:</strong> 1,400+ Metric Tons CO₂ / year (Offsets 60% of factory production power).</p>
+        </div>
+        <div class="vault-card">
+          <h3>🔬 SGS Food Contact Lab Accreditations</h3>
+          <p><strong>FDA Standard:</strong> 21 CFR 177.1520 & 177.2600</p>
+          <p><strong>Germany LFGB:</strong> §30 & §31 sensory & migration pass</p>
+          <p><strong>Toxin Freedom:</strong> Certified 100% BPA-Free, Lead-Free, Phthalate-Free, PFAS-Free.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tab 5: 21 Modules KB -->
+    <section id="kb" class="tab-section">
+      <div style="background:#fff; border-radius:0.75rem; padding:1.5rem; border:1px solid #e2e8f0;">
+        <h2>📚 21 Standard Export Knowledge Base Modules</h2>
+        <p style="color:#64748b; margin-bottom:1.5rem;">Unified enterprise facts feeding all 20 independent websites.</p>
+        <div id="kb-modules-list" style="display:grid; grid-template-columns:repeat(auto-fill, minmax(280px, 1fr)); gap:1rem;">
+          <!-- Populated by app.js -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

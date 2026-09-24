@@ -1,0 +1,599 @@
+{
+  "version": "1.0.0",
+  "enterprise": "Jinjiang Naike Gifts Co., Ltd.",
+  "total_skus": 9,
+  "categories_covered": [
+    "lunchbox",
+    "silicone_baby",
+    "outdoor_tableware",
+    "reusable_drinkware",
+    "lunch_bag",
+    "shoe_charms",
+    "retail_solution"
+  ],
+  "products": [
+    {
+      "sku_id": "NK-WS-BENTO-01",
+      "name": "EazyLunch 4-Compartment Airtight Wheat Straw Bento Box",
+      "category": "lunchbox",
+      "materials": [
+        "Wheat straw composite fiber (35%)",
+        "Food-grade Polypropylene (65%)",
+        "Platinum silicone seal gasket"
+      ],
+      "dimensions": {
+        "length_mm": 215,
+        "width_mm": 160,
+        "height_mm": 60,
+        "weight_g": 380,
+        "capacity_ml": 1100
+      },
+      "applicable_sites": [
+        "eazylunch",
+        "wheatstrawlunchbox",
+        "econaike",
+        "privatelabeltableware",
+        "retailreadytableware"
+      ],
+      "target_age_group": "Ages 4-12 & Adult light lunch",
+      "colors_available": [
+        "Morandi Pink",
+        "Nordic Blue",
+        "Sage Green",
+        "Warm Beige",
+        "Custom Pantone"
+      ],
+      "features": [
+        "Individual airtight silicone compartment seals preventing wet/dry food mixing",
+        "4 heavy-duty dual-action child-friendly snap latches tested for 10,000 openings",
+        "Drop-tested to 2 meters onto hard flooring without structural fracture",
+        "Microwave safe (up to 3 min @ 800W) and top-rack dishwasher safe (up to 120°C)"
+      ],
+      "specifications": {
+        "temperature_tolerance": "-20°C to 120°C",
+        "sealing_rating": "IPX7 hermetic liquid tight",
+        "food_contact_certifications": [
+          "FDA 21 CFR 177.1520",
+          "LFGB §30/31",
+          "EU 10/2011",
+          "BPA Free"
+        ]
+      },
+      "commercial_terms": {
+        "moq_standard": 1000,
+        "moq_custom_color": 3000,
+        "moq_custom_logo": 1000,
+        "sample_lead_time_days": 3,
+        "mass_production_days": 25,
+        "tiered_fob_pricing_usd": {
+          "1000_pcs": 2.85,
+          "3000_pcs": 2.45,
+          "5000_pcs": 2.15,
+          "10000_pcs": 1.95
+        }
+      },
+      "packaging": {
+        "standard_inner": "Eco-friendly frosted polybag + custom color sleeve",
+        "master_carton_qty": 36,
+        "master_carton_dimensions_cm": "48 x 45 x 38",
+        "gross_weight_kg": 15.2,
+        "container_load_40hq": 38500
+      }
+    },
+    {
+      "sku_id": "NK-WS-BENTO-02",
+      "name": "EazyLunch Kids 5-Compartment Shatterproof Lunch Box with Utensils",
+      "category": "lunchbox",
+      "materials": [
+        "Organic wheat straw composite",
+        "Food-grade PP",
+        "Integrated 304 stainless steel fork & spoon"
+      ],
+      "dimensions": {
+        "length_mm": 230,
+        "width_mm": 175,
+        "height_mm": 65,
+        "weight_g": 430,
+        "capacity_ml": 1350
+      },
+      "applicable_sites": [
+        "eazylunch",
+        "kidsdinnerwarefactory",
+        "wheatstrawlunchbox",
+        "privatelabeltableware"
+      ],
+      "target_age_group": "Ages 3-8 (School lunch)",
+      "colors_available": [
+        "Pastel Mint",
+        "Blush Pink",
+        "Sky Blue",
+        "Butter Yellow"
+      ],
+      "features": [
+        "5 portion-controlled food wells preventing food touching (pediatric nutritionist approved)",
+        "Recessed top lid storage bay housing stainless steel kid spoon and fork",
+        "High-impact corner rubberized bumpers to absorb high schoolyard drop impacts",
+        "Removable inner food tray for instant microwave heating and easy cleanup"
+      ],
+      "specifications": {
+        "temperature_tolerance": "-20°C to 120°C",
+        "sealing_rating": "100% leakproof between compartments",
+        "food_contact_certifications": [
+          "FDA",
+          "LFGB",
+          "CPSIA Lead & Phthalates",
+          "BPA Free"
+        ]
+      },
+      "commercial_terms": {
+        "moq_standard": 1000,
+        "moq_custom_color": 3000,
+        "moq_custom_logo": 1000,
+        "sample_lead_time_days": 3,
+        "mass_production_days": 25,
+        "tiered_fob_pricing_usd": {
+          "1000_pcs": 3.45,
+          "3000_pcs": 2.95,
+          "5000_pcs": 2.65,
+          "10000_pcs": 2.38
+        }
+      },
+      "packaging": {
+        "standard_inner": "Custom printed window gift box with matte laminate",
+        "master_carton_qty": 24,
+        "master_carton_dimensions_cm": "50 x 38 x 42",
+        "gross_weight_kg": 12.0,
+        "container_load_40hq": 24000
+      }
+    },
+    {
+      "sku_id": "NK-SIL-BABY-01",
+      "name": "100% Platinum Silicone Baby Suction Plate & Divided Dining Set",
+      "category": "silicone_baby",
+      "materials": [
+        "100% Platinum Cured Liquid Silicone (Shore A 55)"
+      ],
+      "dimensions": {
+        "length_mm": 210,
+        "width_mm": 190,
+        "height_mm": 35,
+        "weight_g": 310,
+        "capacity_ml": 650
+      },
+      "applicable_sites": [
+        "siliconebabyfeedingset",
+        "babytablewarefactory",
+        "econaike",
+        "privatelabeltableware"
+      ],
+      "target_age_group": "Ages 6 months to 4 years (Baby-Led Weaning)",
+      "colors_available": [
+        "Earthy Clay",
+        "Eucalyptus",
+        "Desert Mustard",
+        "Rose Dust",
+        "Stone Grey"
+      ],
+      "features": [
+        "Ultra-strong bottom suction base adhering with >10kg pull resistance on high chair trays",
+        "Deep curved scoop walls allowing infants to easily shovel finger foods without spillage",
+        "4-hour high-temperature post-curing baking guaranteeing zero silicone odor or migration",
+        "Oven, microwave, freezer, and sterilizer safe (-40°C to 230°C)"
+      ],
+      "specifications": {
+        "temperature_tolerance": "-40°C to 230°C",
+        "tensile_strength": "9.5 MPa",
+        "food_contact_certifications": [
+          "FDA 21 CFR 177.2600",
+          "German LFGB",
+          "EN 14372",
+          "BPA/BPS/PVC Free"
+        ]
+      },
+      "commercial_terms": {
+        "moq_standard": 500,
+        "moq_custom_color": 1500,
+        "moq_custom_logo": 500,
+        "sample_lead_time_days": 2,
+        "mass_production_days": 18,
+        "tiered_fob_pricing_usd": {
+          "500_pcs": 2.95,
+          "1500_pcs": 2.45,
+          "3000_pcs": 2.1,
+          "10000_pcs": 1.85
+        }
+      },
+      "packaging": {
+        "standard_inner": "FSC-certified kraft box with transparent biodegradable window",
+        "master_carton_qty": 40,
+        "master_carton_dimensions_cm": "44 x 42 x 36",
+        "gross_weight_kg": 13.8,
+        "container_load_40hq": 36000
+      }
+    },
+    {
+      "sku_id": "NK-SIL-BABY-02",
+      "name": "Complete 6-Piece Baby Feeding Weaning Set (Plate, Bowl, Bib, Cup, Spoon & Fork)",
+      "category": "silicone_baby",
+      "materials": [
+        "100% Platinum Food-Grade Silicone",
+        "Beechwood + Silicone combination cutlery"
+      ],
+      "dimensions": {
+        "length_mm": 250,
+        "width_mm": 220,
+        "height_mm": 90,
+        "weight_g": 680,
+        "capacity_ml": 0
+      },
+      "applicable_sites": [
+        "siliconebabyfeedingset",
+        "babytablewarefactory",
+        "privatelabeltableware",
+        "ecopromotionalgifts"
+      ],
+      "target_age_group": "Ages 6 months to 3 years",
+      "colors_available": [
+        "Sage & Forest",
+        "Blush & Mauve",
+        "Warm Sand & Oat",
+        "Custom Solid Pantone"
+      ],
+      "features": [
+        "Includes: Suction divided plate, suction deep bowl, adjustable deep-pocket bib, 2-handle sippy cup, soft spoon & fork",
+        "Super-soft rounded silicone spoon tips protecting delicate teething gums",
+        "Deep leakproof catch-pocket on bib staying open to catch dropped morsels",
+        "Packed in a luxurious retail gift box ideal for newborn registry and baby shower gifting"
+      ],
+      "specifications": {
+        "temperature_tolerance": "-40°C to 230°C",
+        "food_contact_certifications": [
+          "FDA",
+          "LFGB",
+          "CPSIA Lead & Phthalates",
+          "EN 14372",
+          "BPA Free"
+        ]
+      },
+      "commercial_terms": {
+        "moq_standard": 500,
+        "moq_custom_color": 1000,
+        "moq_custom_logo": 500,
+        "sample_lead_time_days": 3,
+        "mass_production_days": 20,
+        "tiered_fob_pricing_usd": {
+          "500_pcs": 6.8,
+          "1000_pcs": 5.9,
+          "3000_pcs": 5.2,
+          "5000_pcs": 4.75
+        }
+      },
+      "packaging": {
+        "standard_inner": "Rigid drawer gift box with hot-stamped gold logo + foam insert",
+        "master_carton_qty": 16,
+        "master_carton_dimensions_cm": "52 x 46 x 38",
+        "gross_weight_kg": 12.5,
+        "container_load_40hq": 12800
+      }
+    },
+    {
+      "sku_id": "NK-OUT-CAMP-01",
+      "name": "16-Piece Ultralight Nested Camping Tableware Set for 4 Persons",
+      "category": "outdoor_tableware",
+      "materials": [
+        "Wheat straw fiber polymer composite (unbreakable formula)",
+        "Quick-dry mesh bag",
+        "Aluminum carabiner"
+      ],
+      "dimensions": {
+        "length_mm": 220,
+        "width_mm": 220,
+        "height_mm": 180,
+        "weight_g": 920,
+        "capacity_ml": 0
+      },
+      "applicable_sites": [
+        "outdoortablewarefactory",
+        "sustainabletablewarefactory",
+        "econaike",
+        "retailreadytableware"
+      ],
+      "target_age_group": "Camping families, RV travelers, Backpackers",
+      "colors_available": [
+        "Olive Drab",
+        "Desert Sand",
+        "Slate Charcoal",
+        "Campfire Orange"
+      ],
+      "features": [
+        "Full 16-piece kit includes 4 dinner plates (22cm), 4 cereal/soup bowls (15cm), 4 drink cups (300ml), and 4 cutlery sets",
+        "Interlocking nested footprint packing 16 pieces into a compact 22cm cylinder",
+        "Zero metallic clanking noise during RV and van transit",
+        "Sub-zero impact resistance tested down to -20°C in alpine conditions"
+      ],
+      "specifications": {
+        "temperature_tolerance": "-20°C to 120°C",
+        "pack_volume_reduction": "65% saved compared to standard tableware",
+        "food_contact_certifications": [
+          "FDA",
+          "LFGB",
+          "BPA Free",
+          "Dishwasher Safe"
+        ]
+      },
+      "commercial_terms": {
+        "moq_standard": 500,
+        "moq_custom_color": 2000,
+        "moq_custom_logo": 500,
+        "sample_lead_time_days": 3,
+        "mass_production_days": 25,
+        "tiered_fob_pricing_usd": {
+          "500_pcs": 5.8,
+          "1000_pcs": 4.95,
+          "3000_pcs": 4.35,
+          "5000_pcs": 3.9
+        }
+      },
+      "packaging": {
+        "standard_inner": "Heavy-duty breathable ripstop mesh carrier bag + color hangtag",
+        "master_carton_qty": 12,
+        "master_carton_dimensions_cm": "48 x 46 x 38",
+        "gross_weight_kg": 12.2,
+        "container_load_40hq": 13500
+      }
+    },
+    {
+      "sku_id": "NK-DRK-CUP-01",
+      "name": "16oz Double-Wall Wheat Straw Reusable Coffee Travel Mug",
+      "category": "reusable_drinkware",
+      "materials": [
+        "Wheat straw fiber composite",
+        "Food-grade PP inner wall",
+        "Silicone leakproof flip seal"
+      ],
+      "dimensions": {
+        "length_mm": 90,
+        "width_mm": 90,
+        "height_mm": 165,
+        "weight_g": 195,
+        "capacity_ml": 480
+      },
+      "applicable_sites": [
+        "reusablecoffeecupfactory",
+        "ecopromotionalgifts",
+        "wheatstrawtableware",
+        "econaike"
+      ],
+      "target_age_group": "Commuters, Coffee Lovers, Corporate staff",
+      "colors_available": [
+        "Espresso Brown",
+        "Oat Latte",
+        "Forest Pine",
+        "Matte Black",
+        "Custom Pantone"
+      ],
+      "features": [
+        "Double-wall hollow insulation maintaining beverage warmth for 90+ minutes without exterior hot grip",
+        "360-degree leakproof threaded lid with silicone flip splash-guard closure",
+        "Ergonomic car cup-holder tapered bottom geometry",
+        "Wear-resistant exterior silk printing and laser engraving passing 200+ dishwasher wash cycles"
+      ],
+      "specifications": {
+        "temperature_tolerance": "-20°C to 110°C",
+        "thermal_retention": ">55°C after 2 hours (ambient 20°C)",
+        "food_contact_certifications": [
+          "FDA",
+          "LFGB",
+          "Proposition 65 Lead/Cadmium Free",
+          "BPA Free"
+        ]
+      },
+      "commercial_terms": {
+        "moq_standard": 1000,
+        "moq_custom_color": 3000,
+        "moq_custom_logo": 1000,
+        "sample_lead_time_days": 2,
+        "mass_production_days": 20,
+        "tiered_fob_pricing_usd": {
+          "1000_pcs": 1.85,
+          "3000_pcs": 1.55,
+          "5000_pcs": 1.35,
+          "10000_pcs": 1.18
+        }
+      },
+      "packaging": {
+        "standard_inner": "Recycled kraft paper cylindrical tube or individual tuck box",
+        "master_carton_qty": 48,
+        "master_carton_dimensions_cm": "56 x 38 x 36",
+        "gross_weight_kg": 10.8,
+        "container_load_40hq": 42000
+      }
+    },
+    {
+      "sku_id": "NK-BAG-LUNCH-01",
+      "name": "600D rPET Insulated Thermal Lunch Bag with Seamless PEVA Lining",
+      "category": "lunch_bag",
+      "materials": [
+        "100% Recycled 600D Oxford Fabric (rPET GRS certified)",
+        "5mm EPE insulation foam",
+        "Hot-pressed food-grade PEVA lining"
+      ],
+      "dimensions": {
+        "length_mm": 260,
+        "width_mm": 190,
+        "height_mm": 220,
+        "weight_g": 260,
+        "capacity_ml": 8500
+      },
+      "applicable_sites": [
+        "insulatedlunchbagfactory",
+        "eazylunch",
+        "wheatstrawlunchbox",
+        "retailreadytableware"
+      ],
+      "target_age_group": "School kids, Office commuters, Outdoor picnic",
+      "colors_available": [
+        "Heather Grey",
+        "Navy Blue",
+        "Sage Stripe",
+        "Pastel Rainbow Print",
+        "Custom All-Over Print"
+      ],
+      "features": [
+        "Seamless ultrasonic heat-welded PEVA interior lining: 100% leakproof even with melting ice cubes",
+        "High-density 5mm thermal insulation foam keeping meals chilled up to 6 hours",
+        "Expandable top zip section increasing storage capacity by 35% for fruit and water bottles",
+        "Reinforced bartack stitching and detachable padded shoulder strap"
+      ],
+      "specifications": {
+        "thermal_rating": "Maintains <10°C for 6 hours with 200g ice pack",
+        "tear_strength": ">120 N seam pull force",
+        "compliance_certifications": [
+          "GRS (Global Recycled Standard)",
+          "CPSIA Lead & Phthalates",
+          "FDA Food Contact PEVA",
+          "REACH"
+        ]
+      },
+      "commercial_terms": {
+        "moq_standard": 1000,
+        "moq_custom_color": 2000,
+        "moq_custom_logo": 1000,
+        "sample_lead_time_days": 5,
+        "mass_production_days": 30,
+        "tiered_fob_pricing_usd": {
+          "1000_pcs": 3.65,
+          "2000_pcs": 3.15,
+          "5000_pcs": 2.75,
+          "10000_pcs": 2.45
+        }
+      },
+      "packaging": {
+        "standard_inner": "Folded flat in self-adhesive polybag with desiccant",
+        "master_carton_qty": 30,
+        "master_carton_dimensions_cm": "54 x 42 x 38",
+        "gross_weight_kg": 9.2,
+        "container_load_40hq": 28000
+      }
+    },
+    {
+      "sku_id": "NK-GIFT-CHARM-01",
+      "name": "Custom 2D/3D Soft PVC Shoe Charms with Ultrasonic Welded Button",
+      "category": "shoe_charms",
+      "materials": [
+        "Non-toxic Phthalate-Free Soft PVC",
+        "High-tenacity POM back buckle button"
+      ],
+      "dimensions": {
+        "length_mm": 30,
+        "width_mm": 30,
+        "height_mm": 8,
+        "weight_g": 4,
+        "capacity_ml": 0
+      },
+      "applicable_sites": [
+        "customshoecharms",
+        "custompvcgifts",
+        "licensedmerchandisefactory",
+        "ecopromotionalgifts"
+      ],
+      "target_age_group": "Ages 6+ Kids, Teens, Streetwear & Clog shoe enthusiasts",
+      "colors_available": [
+        "Up to 12 micro-injected spot Pantone colors"
+      ],
+      "features": [
+        "High-precision 12-color automated micro-injection robot dispensing down to 0.1mm line width",
+        "Patented ultrasonic back button fusion resisting >15 lbs tensile pull force without separating",
+        "Universal buckle diameter (12mm head / 8mm stem) compatible with all standard clog footwear holes",
+        "Over 2,000 in-stock open novelty molds available for immediate branding"
+      ],
+      "specifications": {
+        "pull_force_rating": ">15 lbs (68 N) pull-off resistance",
+        "pvc_safety": "Non-phthalate eco compound complying with EU REACH Annex XVII",
+        "compliance_certifications": [
+          "ASTM F963 Small Parts Warning",
+          "EN 71-1, 2, 3",
+          "CPSIA Lead & Phthalates"
+        ]
+      },
+      "commercial_terms": {
+        "moq_standard": 1000,
+        "moq_custom_color": 1000,
+        "moq_custom_logo": 1000,
+        "sample_lead_time_days": 3,
+        "mass_production_days": 12,
+        "tiered_fob_pricing_usd": {
+          "1000_pcs": 0.22,
+          "5000_pcs": 0.16,
+          "10000_pcs": 0.12,
+          "50000_pcs": 0.085
+        }
+      },
+      "packaging": {
+        "standard_inner": "Individual sealed OPP bag or custom 4-pack blister card display",
+        "master_carton_qty": 2000,
+        "master_carton_dimensions_cm": "36 x 32 x 28",
+        "gross_weight_kg": 9.5,
+        "container_load_40hq": 2400000
+      }
+    },
+    {
+      "sku_id": "NK-SOL-PDQ-01",
+      "name": "Supermarket Retail-Ready PDQ Countertop Tableware Display Unit",
+      "category": "retail_solution",
+      "materials": [
+        "Reinforced 350g CCNB + B-Flute Corrugated Cardboard",
+        "FSC Mixed Recycled Paper"
+      ],
+      "dimensions": {
+        "length_mm": 580,
+        "width_mm": 380,
+        "height_mm": 280,
+        "weight_g": 650,
+        "capacity_ml": 0
+      },
+      "applicable_sites": [
+        "retailreadytableware",
+        "privatelabeltableware",
+        "econaike"
+      ],
+      "target_age_group": "Supermarket shelf & endcap shopper display",
+      "colors_available": [
+        "High-definition 4C CMYK offset print + Gloss/Matte UV varnish"
+      ],
+      "features": [
+        "Pre-packed factory display tray holding 24-36 tableware units, ready to drop onto retail store shelves",
+        "Tear-away perforated front lip for 5-second aisle stocking without utility knives",
+        "GS1-128 verified barcode labels on master shippers and individual product packaging",
+        "Tested and certified under ISTA 3A transit simulation standards"
+      ],
+      "specifications": {
+        "stacking_strength": ">350 kg top compression load",
+        "transit_compliance": "ISTA 3A / 6-Amazon.com certified",
+        "environmental_certifications": [
+          "FSC-STD-40-004",
+          "100% Recyclable cardboard"
+        ]
+      },
+      "commercial_terms": {
+        "moq_standard": 500,
+        "moq_custom_color": 500,
+        "sample_lead_time_days": 4,
+        "mass_production_days": 20,
+        "tiered_fob_pricing_usd": {
+          "500_pcs": 3.8,
+          "1000_pcs": 2.95,
+          "2500_pcs": 2.25,
+          "5000_pcs": 1.75
+        }
+      },
+      "packaging": {
+        "standard_inner": "Pre-packed with tableware SKU goods inside master shipping carton",
+        "master_carton_qty": 1,
+        "master_carton_dimensions_cm": "60 x 40 x 30",
+        "gross_weight_kg": 14.5,
+        "container_load_40hq": 1200
+      }
+    }
+  ]
+}

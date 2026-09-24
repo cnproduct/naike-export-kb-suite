@@ -1,0 +1,1555 @@
+{
+  "version": "1.0.0",
+  "organization": "Jinjiang Naike Gifts Co., Ltd. (晋江市耐克礼品玩具有限公司)",
+  "updated_at": "2026-09-23",
+  "total_sites": 20,
+  "strategic_groups": {
+    "A": {
+      "name": "企业与核心资产站",
+      "count": 2,
+      "description": "企业信任与垂直品牌入口"
+    },
+    "B": {
+      "name": "产品、材料与场景垂直站",
+      "count": 12,
+      "description": "按材料与应用场景细分"
+    },
+    "C": {
+      "name": "礼赠、IP周边与定制制造站",
+      "count": 4,
+      "description": "企业礼赠、潮玩周边与审厂资质"
+    },
+    "D": {
+      "name": "高价值买家解决方案站",
+      "count": 2,
+      "description": "私牌孵化与商超集采"
+    }
+  },
+  "sites": [
+    {
+      "id": "econaike",
+      "domain": "econaike.com",
+      "name": "EcoNaike Corporate Flagship",
+      "name_zh": "耐科企业主站与生态材料总入口",
+      "group": "A",
+      "group_name": "企业与核心资产站",
+      "priority": "P0",
+      "phase": "Phase 0",
+      "launch_month": "M0-M1",
+      "status": "active",
+      "positioning": "耐科企业主站与生态材料产品总入口。展示工厂主体、20000+平米产线、模具工程能力、社会责任审厂（Disney/Coca-Cola/Sedex）与全球市场大额订单交付实力。",
+      "target_markets": [
+        "Global",
+        "North America",
+        "Europe",
+        "Australia",
+        "Japan"
+      ],
+      "target_buyers": [
+        "全球大型连锁零售商采购部",
+        "跨国生活用品进口商",
+        "知名品牌采购委员会",
+        "跨国企业礼品采购中心"
+      ],
+      "primary_cta": "Request Factory Audit Dossier & Master OEM Catalog",
+      "secondary_cta": "Book Virtual Factory Video Tour",
+      "keywords": {
+        "primary": "eco friendly tableware manufacturer",
+        "secondary": [
+          "sustainable houseware supplier",
+          "OEM ODM tableware factory",
+          "biodegradable dinnerware factory"
+        ],
+        "long_tail": [
+          "disney audited tableware manufacturer china",
+          "custom sustainable dining set bulk factory",
+          "bpa free wheat straw tableware direct supplier",
+          "esg solar powered houseware factory china"
+        ],
+        "intent_cluster": "Corporate Factory Validation & Tier-1 Wholesale Sourcing"
+      },
+      "unique_value_prop": "20,000 sqm automated facility, Disney FAMA & Coca-Cola SGP audited, 1.5MW rooftop solar green factory producing eco-certified tableware for world-class brands.",
+      "differentiators": [
+        "Disney FAMA Facility Code W128-4829-1 & Coca-Cola Green SGP audit qualification",
+        "1.5 MW factory solar array offsetting 60% of manufacturing power (Scope 1/2 ESG report)",
+        "In-house precision tooling workshop with 3-week rapid mold turnaround",
+        "Full traceability from raw agricultural polymer to export container loading"
+      ],
+      "compliance_requirements": [
+        "Disney FAMA",
+        "Coca-Cola SGP",
+        "Sedex 4-Pillar SMETA",
+        "FDA 21 CFR",
+        "LFGB",
+        "ISO 9001/14001"
+      ],
+      "evidence_required": [
+        "Disney FAMA renewal certificate",
+        "SGS test reports",
+        "Solar grid ESG generation certificate",
+        "AQL 1.0 inspection records"
+      ],
+      "risk_warnings": [
+        "Do NOT claim trademark ownership of Disney or Coca-Cola; state factory social audit approval only.",
+        "Distinguish Naike Gifts clearly from sportswear brand Nike.",
+        "Green claims must cite specific ISO/ASTM standards."
+      ],
+      "languages": [
+        "en",
+        "de",
+        "fr",
+        "ja",
+        "es"
+      ],
+      "page_blueprint": {
+        "product_pages_count": 12,
+        "solution_pages_count": 5,
+        "process_pages_count": 4,
+        "case_studies_count": 3,
+        "guides_count": 6,
+        "trust_pages_count": 5
+      }
+    },
+    {
+      "id": "eazylunch",
+      "domain": "eazylunch.com",
+      "name": "EazyLunch Bento & Lunchware Brand",
+      "name_zh": "儿童便当盒与便携餐饮用品垂直品牌站",
+      "group": "A",
+      "group_name": "企业与核心资产站",
+      "priority": "P0",
+      "phase": "Phase 0",
+      "launch_month": "M0-M1",
+      "status": "active",
+      "positioning": "儿童便当盒、午餐盒及便携餐饮用品垂直站。专注防漏结构、分格设计、跌落及洗碗机耐用性、健康食品级环保材料与各年龄段专属儿童餐饮解决方案。",
+      "target_markets": [
+        "United States",
+        "Canada",
+        "United Kingdom",
+        "European Union",
+        "Australia"
+      ],
+      "target_buyers": [
+        "儿童用品与母婴品牌商",
+        "商超连锁百货买手",
+        "Amazon Top 100 餐饮卖家",
+        "学校餐食用品采购商"
+      ],
+      "primary_cta": "Request EazyLunch Sample Kit & Retail Price Sheet",
+      "secondary_cta": "Download Drop-Test & Leak-Proof Video Evidence",
+      "keywords": {
+        "primary": "kids bento box manufacturer",
+        "secondary": [
+          "wheat straw bento box wholesale",
+          "custom lunch box OEM",
+          "leakproof kids lunchbox supplier"
+        ],
+        "long_tail": [
+          "4 compartment sealed bento box factory",
+          "drop resistant toddler lunchbox wholesale",
+          "dishwasher safe eco bento box bulk",
+          "private label insulated bento lunch set"
+        ],
+        "intent_cluster": "Kids Bento Box Product Selection, Drop Safety & Wholesale OEM"
+      },
+      "unique_value_prop": "Engineered for tiny hands with 100% leakproof silicone seal technology, drop-resistant bumpers, and non-toxic wheat straw composite food contact surfaces.",
+      "differentiators": [
+        "Proprietary 4-latch dual-injection molded silicone airtight sealing mechanism",
+        "2-meter drop test durability guarantee without cracking or seal failure",
+        "Segmented portion control trays designed according to pediatric nutritional recommendations",
+        "Top-rack dishwasher safe and microwave safe (up to 120°C)"
+      ],
+      "compliance_requirements": [
+        "FDA 21 CFR 177.1520",
+        "EU 10/2011 Food Contact",
+        "BPA Free",
+        "PFAS Free",
+        "CPSIA Lead & Phthalates"
+      ],
+      "evidence_required": [
+        "SGS Migration test report",
+        "Drop test durability video",
+        "Dishwasher 500-cycle test lab log"
+      ],
+      "risk_warnings": [
+        "Avoid claiming 'indestructible'; use 'high-impact shatter-resistant'.",
+        "Highlight age grading (e.g. Toddler 2-5 vs School 6-12) to meet CPSIA compliance."
+      ],
+      "languages": [
+        "en",
+        "de",
+        "fr"
+      ],
+      "page_blueprint": {
+        "product_pages_count": 12,
+        "solution_pages_count": 5,
+        "process_pages_count": 4,
+        "case_studies_count": 3,
+        "guides_count": 6,
+        "trust_pages_count": 5
+      }
+    },
+    {
+      "id": "sustainabletablewarefactory",
+      "domain": "sustainabletablewarefactory.com",
+      "name": "Sustainable Tableware Factory",
+      "name_zh": "可持续餐具整体解决方案站",
+      "group": "B",
+      "group_name": "产品、材料与场景垂直站",
+      "priority": "P1",
+      "phase": "Phase 2",
+      "launch_month": "M5-M6",
+      "status": "planned",
+      "positioning": "可持续餐具整体解决方案。面向欧美环保生活方式品牌与连锁零售，提供多材料选择器（麦秆、竹纤、PLA、稻壳）、生命周期成本对比与低碳定制生产。",
+      "target_markets": [
+        "Germany",
+        "France",
+        "United Kingdom",
+        "Nordics",
+        "United States"
+      ],
+      "target_buyers": [
+        "欧洲可持续生活方式品牌创始人",
+        "零售超市可持续选品总监",
+        "环保餐饮连锁供应链负责人"
+      ],
+      "primary_cta": "Download Sustainable Materials Comparison & Solution Guide",
+      "secondary_cta": "Request LCA Carbon Footprint Report",
+      "keywords": {
+        "primary": "sustainable tableware manufacturer",
+        "secondary": [
+          "eco friendly dinnerware supplier",
+          "custom reusable tableware",
+          "carbon neutral tableware factory"
+        ],
+        "long_tail": [
+          "wheat straw vs pla dinnerware comparative cost",
+          "reusable eco dinnerware bulk supplier europe",
+          "circular economy tableware manufacturing china",
+          "low carbon footprint dining products factory"
+        ],
+        "intent_cluster": "Sustainable Materials Selection, Compliance Roadmap & LCA Analysis"
+      },
+      "unique_value_prop": "Complete engineering roadmap for transitioning single-use or plastic tableware to certified circular, bio-composite alternatives with verified low carbon coefficients.",
+      "differentiators": [
+        "Interactive material decision engine: Wheat Straw vs Rice Husk vs PLA vs Food-Grade PP",
+        "Third-party audited Scope 1 & 2 carbon footprint certificates powered by 1.5MW factory solar",
+        "End-of-life circularity assessment and recycling compatibility guidelines"
+      ],
+      "compliance_requirements": [
+        "LFGB 30 & 31",
+        "EU Framework Regulation (EC) 1935/2004",
+        "DIN CERTCO",
+        "TUV Austria"
+      ],
+      "evidence_required": [
+        "Carbon footprint validation dossier",
+        "Heavy metal migration lab testing",
+        "Renewable raw material certificate"
+      ],
+      "risk_warnings": [
+        "Never claim '100% biodegradable' without disclosing industrial composting prerequisites.",
+        "Strict adherence to EU Green Claims Directive and FTC Green Guides."
+      ],
+      "languages": [
+        "en",
+        "de",
+        "fr"
+      ],
+      "page_blueprint": {
+        "product_pages_count": 12,
+        "solution_pages_count": 5,
+        "process_pages_count": 4,
+        "case_studies_count": 3,
+        "guides_count": 6,
+        "trust_pages_count": 5
+      }
+    },
+    {
+      "id": "wheatstrawtableware",
+      "domain": "wheatstrawtableware.com",
+      "name": "Wheat Straw Tableware Direct",
+      "name_zh": "麦秆复合材料餐具垂直站",
+      "group": "B",
+      "group_name": "产品、材料与场景垂直站",
+      "priority": "P1",
+      "phase": "Phase 2",
+      "launch_month": "M5-M6",
+      "status": "planned",
+      "positioning": "麦秆复合材料餐具专业工厂站。深入麦秆生物质复合聚合物的科学配比、气味消除工艺、色差均一性控制、微波及洗碗机耐热测试，提供整套家庭与餐饮系列餐具开发。",
+      "target_markets": [
+        "United States",
+        "Canada",
+        "Australia",
+        "United Kingdom",
+        "Germany"
+      ],
+      "target_buyers": [
+        "家居日用品进口商",
+        "亚马逊家居厨具头部卖家",
+        "商超连锁餐厨采购经理",
+        "大学生宿舍用品采购商"
+      ],
+      "primary_cta": "Request Wheat Straw Tableware Spec Sheet & Color Swatches",
+      "secondary_cta": "Get Bulk Container Pricing",
+      "keywords": {
+        "primary": "wheat straw tableware manufacturer",
+        "secondary": [
+          "wheat fiber dinnerware wholesale",
+          "custom wheat straw plates and bowls",
+          "unbreakable wheat straw dining set"
+        ],
+        "long_tail": [
+          "microwave safe wheat straw plates supplier",
+          "dishwasher safe wheat straw bowl bulk factory",
+          "wheat fiber cutlery set wholesale china",
+          "matte pastel wheat straw tableware custom colors"
+        ],
+        "intent_cluster": "Wheat Straw Dinnerware Technical Specs, Formulation & Wholesale Pricing"
+      },
+      "unique_value_prop": "Optimized 35% organic wheat straw fiber composite formula that delivers natural organic grain texture without chemical off-gassing, tested heat-resistant up to 120°C.",
+      "differentiators": [
+        "Proprietary high-temperature deodorization process eliminating straw pungency",
+        "Precision color masterbatch formulation guaranteeing Pantone consistency across batch production",
+        "Ultralight shatterproof performance ideal for families, dorms, outdoor patio use"
+      ],
+      "compliance_requirements": [
+        "FDA 21 CFR",
+        "LFGB",
+        "SGS Food Contact",
+        "BPA Free",
+        "PFAS Free"
+      ],
+      "evidence_required": [
+        "SGS Food Contact Report",
+        "Heat-resistance test report up to 120°C",
+        "Gas chromatography odor analysis"
+      ],
+      "risk_warnings": [
+        "Clearly explain composite matrix (wheat straw + food-grade PP binder); do not claim 100% natural straw.",
+        "Label microwave limits: Max 3 minutes at under 800W."
+      ],
+      "languages": [
+        "en",
+        "de",
+        "fr"
+      ],
+      "page_blueprint": {
+        "product_pages_count": 12,
+        "solution_pages_count": 5,
+        "process_pages_count": 4,
+        "case_studies_count": 3,
+        "guides_count": 6,
+        "trust_pages_count": 5
+      }
+    },
+    {
+      "id": "wheatstrawlunchbox",
+      "domain": "wheatstrawlunchbox.com",
+      "name": "Wheat Straw Lunch Box Factory",
+      "name_zh": "麦秆午餐盒与便当盒工厂制造站",
+      "group": "B",
+      "group_name": "产品、材料与场景垂直站",
+      "priority": "P2",
+      "phase": "Phase 3",
+      "launch_month": "M10-M12",
+      "status": "planned",
+      "positioning": "麦秆午餐盒、便当盒工厂制造站。区别于 eazylunch 的品牌化路线，本站以纯B2B工厂工程视角，深度解析分格模具注塑、防漏卡扣机械寿命、食品级硅胶密封圈配合公差与高性价比代工。",
+      "target_markets": [
+        "United States",
+        "United Kingdom",
+        "Germany",
+        "France",
+        "Australia",
+        "Japan"
+      ],
+      "target_buyers": [
+        "办公与学生文具礼品进口商",
+        "大型零售超市贴牌采购",
+        "跨境电商日用便当盒大卖家"
+      ],
+      "primary_cta": "Get Wholesale Tooling & Bulk Bento Quotation",
+      "secondary_cta": "Request Leakproof Engineering CAD Drawings",
+      "keywords": {
+        "primary": "wheat straw lunch box manufacturer",
+        "secondary": [
+          "bento box wholesale",
+          "custom compartment lunch box",
+          "eco meal prep container factory"
+        ],
+        "long_tail": [
+          "3 compartment wheat straw bento box bulk",
+          "leak proof stackable lunch box factory china",
+          "custom mold wheat straw meal container oem",
+          "office meal prep bento box wholesale"
+        ],
+        "intent_cluster": "Industrial Tooling, Latch Mechanical Durability & Bulk Factory Ordering"
+      },
+      "unique_value_prop": "Precision-engineered dual-cavity injection molds delivering micron-level latch tolerance and 10,000+ cycle fatigue resistance on food-grade airtight compartments.",
+      "differentiators": [
+        "10,000-cycle hinge & latch open/close mechanical stress testing report",
+        "Modular compartment tooling configurations: 2-compartment, 3-compartment, 4-compartment, 5-compartment",
+        "Sub-assembly ultrasonic welding and automated robotic gasket insertion"
+      ],
+      "compliance_requirements": [
+        "FDA",
+        "LFGB",
+        "Dishwasher Safe EN 12875-1",
+        "Microwave Safe EN 15284"
+      ],
+      "evidence_required": [
+        "Mechanical latch cycle test log",
+        "Hermetic pressure test report",
+        "FDA food contact lab certification"
+      ],
+      "risk_warnings": [
+        "Differentiate distinctly from eazylunch.com by focusing on factory OEM/ODM engineering parameters and wholesale tier pricing."
+      ],
+      "languages": [
+        "en",
+        "de",
+        "ja"
+      ],
+      "page_blueprint": {
+        "product_pages_count": 12,
+        "solution_pages_count": 5,
+        "process_pages_count": 4,
+        "case_studies_count": 3,
+        "guides_count": 6,
+        "trust_pages_count": 5
+      }
+    },
+    {
+      "id": "reusablecoffeecupfactory",
+      "domain": "reusablecoffeecupfactory.com",
+      "name": "Reusable Coffee Cup Factory",
+      "name_zh": "可重复使用咖啡杯与旅行杯制造站",
+      "group": "B",
+      "group_name": "产品、材料与场景垂直站",
+      "priority": "P2",
+      "phase": "Phase 3",
+      "launch_month": "M10-M12",
+      "status": "planned",
+      "positioning": "可重复使用咖啡杯、旅行随行杯专业制造。针对欧洲、英国、澳洲与北美咖啡连锁、环保饮品品牌及企业周边，攻克杯盖螺纹密封防漏、双层隔热防烫、丝印/热转印耐久度与高档礼盒包装。",
+      "target_markets": [
+        "United Kingdom",
+        "Germany",
+        "Australia",
+        "United States",
+        "Netherlands"
+      ],
+      "target_buyers": [
+        "精品咖啡连锁品牌采购总监",
+        "大学与企业礼品采购部",
+        "生活方式杯壶品牌开发人员"
+      ],
+      "primary_cta": "Design Your Custom Branded Eco Coffee Cup",
+      "secondary_cta": "Request Sample Kit (12oz / 16oz / Collapsible)",
+      "keywords": {
+        "primary": "reusable coffee cup manufacturer",
+        "secondary": [
+          "travel mug OEM",
+          "custom eco coffee cups wholesale",
+          "wheat straw coffee mug supplier"
+        ],
+        "long_tail": [
+          "spill proof travel coffee cup bulk factory",
+          "custom printed eco friendly coffee mugs 16oz",
+          "double wall wheat straw tumbler manufacturer",
+          "cafe brand merchandise reusable cup supplier"
+        ],
+        "intent_cluster": "Custom Branded Coffee Cups, Thermal Performance & Spill-Proof Engineering"
+      },
+      "unique_value_prop": "Ergonomic 360-degree leakproof sip-lids engineered with food-grade silicone plugs, double-wall thermal insulation maintaining beverage warmth for 90+ minutes without exterior scorching.",
+      "differentiators": [
+        "Precision thread-on leakproof lids with silicone splash-guard flip seals",
+        "Double-wall hollow insulation layer providing comfortable hand-feel up to 95°C hot brew",
+        "High-adhesion silkscreen, UV printing, and laser engraving rated for 200+ dishwasher cycles without fading"
+      ],
+      "compliance_requirements": [
+        "FDA",
+        "LFGB",
+        "BPA Free",
+        "EU 10/2011",
+        "Proposition 65"
+      ],
+      "evidence_required": [
+        "Thermal decay test curve data",
+        "Print abrasion resistance ASTM D5264 test",
+        "SGS Food Migration report"
+      ],
+      "risk_warnings": [
+        "State clearly that single-wall wheat cups require a silicone heat sleeve for liquids over 85°C."
+      ],
+      "languages": [
+        "en",
+        "de"
+      ],
+      "page_blueprint": {
+        "product_pages_count": 12,
+        "solution_pages_count": 5,
+        "process_pages_count": 4,
+        "case_studies_count": 3,
+        "guides_count": 6,
+        "trust_pages_count": 5
+      }
+    },
+    {
+      "id": "outdoortablewarefactory",
+      "domain": "outdoortablewarefactory.com",
+      "name": "Outdoor Tableware Factory",
+      "name_zh": "露营、野餐、房车与轻户外餐具站",
+      "group": "B",
+      "group_name": "产品、材料与场景垂直站",
+      "priority": "P1",
+      "phase": "Phase 1",
+      "launch_month": "M2-M4",
+      "status": "planned",
+      "positioning": "露营、野餐、房车与轻户外餐具专业站。面向美加、澳新、德国与北欧户外品牌，主打极限轻量化、紧凑堆叠收纳、防刮耐摔、透气网袋便携包装与2人/4人/6人全套野外餐饮组合。",
+      "target_markets": [
+        "United States",
+        "Canada",
+        "Australia",
+        "Germany",
+        "Sweden",
+        "Norway"
+      ],
+      "target_buyers": [
+        "户外露营装备品牌采购经理",
+        "房车（RV）配件连锁超市采购",
+        "野营用品跨境电商顶级卖家"
+      ],
+      "primary_cta": "Request Outdoor Dinnerware Field-Test Report & Catalog",
+      "secondary_cta": "Calculate Multi-Person Camping Set Weight & Packing Volume",
+      "keywords": {
+        "primary": "camping dinnerware set manufacturer",
+        "secondary": [
+          "outdoor tableware supplier",
+          "unbreakable picnic dinnerware OEM",
+          "rv lightweight dining set bulk"
+        ],
+        "long_tail": [
+          "nesting camping dinnerware set 4 person",
+          "shatterproof outdoor wheat straw dishes factory",
+          "mesh bag portable picnic tableware wholesale",
+          "ultralight campervan dining set manufacturer"
+        ],
+        "intent_cluster": "Ultralight Camping Mess Kits, Nesting Packaging & Shatterproof Field Testing"
+      },
+      "unique_value_prop": "Engineered for the backcountry: 40% lighter than ceramic or enamel, zero metallic clatter, nested compact storage volume saving 65% pack space, and guaranteed shatterproof under outdoor impacts.",
+      "differentiators": [
+        "Patented interlocking nesting geometric profiles allowing 16-piece sets to pack into a 22cm cylinder",
+        "High-tensile wheat composite polymer surviving sub-zero camping drops (-20°C freeze test verified)",
+        "Integrated fast-dry mesh carrying cases with carabiner attachment clips"
+      ],
+      "compliance_requirements": [
+        "FDA",
+        "LFGB",
+        "EN 12875-1",
+        "BPA Free",
+        "Sub-Zero Impact Test"
+      ],
+      "evidence_required": [
+        "Low-temperature impact test report (-20°C drop test)",
+        "Pack volume CAD analysis",
+        "LFGB food contact report"
+      ],
+      "risk_warnings": [
+        "Do NOT use over open campfire flames; state safe operating temperature limits (-20°C to 120°C)."
+      ],
+      "languages": [
+        "en",
+        "de"
+      ],
+      "page_blueprint": {
+        "product_pages_count": 12,
+        "solution_pages_count": 5,
+        "process_pages_count": 4,
+        "case_studies_count": 3,
+        "guides_count": 6,
+        "trust_pages_count": 5
+      }
+    },
+    {
+      "id": "kidsdinnerwarefactory",
+      "domain": "kidsdinnerwarefactory.com",
+      "name": "Kids Dinnerware Factory",
+      "name_zh": "3岁以上儿童餐具套装制造站",
+      "group": "B",
+      "group_name": "产品、材料与场景垂直站",
+      "priority": "P2",
+      "phase": "Phase 2",
+      "launch_month": "M5-M9",
+      "status": "planned",
+      "positioning": "3岁以上儿童餐具、餐盘、碗、水杯与叉勺套装专业站。面向欧美日韩幼童用品渠道，主打分龄人体工学设计、模内热转印童趣卡通图案、抗摔耐磨、零售开窗彩盒与季节性主题系列上新。",
+      "target_markets": [
+        "United States",
+        "United Kingdom",
+        "Germany",
+        "Japan",
+        "South Korea"
+      ],
+      "target_buyers": [
+        "幼教与亲子生活品牌产品总监",
+        "大型母婴百货连锁采购商",
+        "日韩生活杂货设计买手"
+      ],
+      "primary_cta": "Inquire for Custom Kids Dinnerware Sets & Graphic Mockups",
+      "secondary_cta": "Download CPSIA & EN 71 Child Safety Test Certificates",
+      "keywords": {
+        "primary": "kids dinnerware manufacturer",
+        "secondary": [
+          "children tableware wholesale",
+          "custom kids plate bowl cup set",
+          "toddler dining set factory"
+        ],
+        "long_tail": [
+          "bpa free divided kids plate bulk factory",
+          "shatterproof cartoon children tableware oem",
+          "ergonomic toddler fork and spoon set supplier",
+          "custom retail window box kids dining gift set"
+        ],
+        "intent_cluster": "Child Ergonomics, Cartoon In-Mold Printing Safety & Retail Packaging"
+      },
+      "unique_value_prop": "Ergonomically contoured for growing toddlers (ages 3+) with non-slip base geometry, anti-spill curved walls, and food-safe in-mold graphic technology that never peels into food.",
+      "differentiators": [
+        "Curved inner scoop rims designed to help children feed themselves with minimal spills",
+        "Sub-surface in-mold labeling (IML) preventing baby cutlery scratch contact with printing pigments",
+        "Smooth rounded edge finishing with zero micro-burrs exceeding child safety standards"
+      ],
+      "compliance_requirements": [
+        "CPSIA Lead & Phthalates",
+        "EU 10/2011",
+        "EN 14372 Cutlery & Feeding",
+        "FDA Food Contact"
+      ],
+      "evidence_required": [
+        "EN 14372 laboratory mechanical safety test",
+        "CPSIA lead content test report",
+        "Color fastness lab report"
+      ],
+      "risk_warnings": [
+        "Ensure all fork tines and knife edges comply with EN 14372 sharpness safety guidelines.",
+        "Clear differentiation from infant silicone feeding sets (this site focuses on ages 3+ independent eating)."
+      ],
+      "languages": [
+        "en",
+        "de",
+        "ja"
+      ],
+      "page_blueprint": {
+        "product_pages_count": 12,
+        "solution_pages_count": 5,
+        "process_pages_count": 4,
+        "case_studies_count": 3,
+        "guides_count": 6,
+        "trust_pages_count": 5
+      }
+    },
+    {
+      "id": "siliconebabyfeedingset",
+      "domain": "siliconebabyfeedingset.com",
+      "name": "Silicone Baby Feeding Set Specialist",
+      "name_zh": "婴童硅胶喂养套装专业制造站",
+      "group": "B",
+      "group_name": "产品、材料与场景垂直站",
+      "priority": "P1",
+      "phase": "Phase 1",
+      "launch_month": "M2-M4",
+      "status": "planned",
+      "positioning": "婴童硅胶喂养套装专业站。攻坚美加英欧澳高端母婴市场，主打100%铂金硫化食品级硅胶、强劲吸盘防翻倒工程、40-70度肖氏硬度精准调校、二次高温脱硫无异味、莫兰迪定制色系与私牌套装开发。",
+      "target_markets": [
+        "United States",
+        "Canada",
+        "United Kingdom",
+        "Germany",
+        "Australia"
+      ],
+      "target_buyers": [
+        "高端母婴品牌创始人",
+        "亚马逊Baby Feeding类目Top 50卖家",
+        "精品母婴买手店连锁采购",
+        "跨境独立站DTC品牌主"
+      ],
+      "primary_cta": "Order Baby Feeding Set Prototype & Compliance Dossier",
+      "secondary_cta": "Request Silicone Shore Hardness & Suction Test Data",
+      "keywords": {
+        "primary": "silicone baby feeding set manufacturer",
+        "secondary": [
+          "wholesale silicone baby tableware",
+          "private label baby feeding set",
+          "suction baby plate factory"
+        ],
+        "long_tail": [
+          "100% platinum silicone baby bowl with suction",
+          "custom color silicone baby bib and spoon set oem",
+          "fda lfgb certified toddler feeding products supplier",
+          "infant weaning feeding set custom packaging"
+        ],
+        "intent_cluster": "Platinum Silicone Formulation, Suction Physics & Infant Safety Compliance"
+      },
+      "unique_value_prop": "100% medical/food-grade platinum-cured liquid silicone with 4-hour secondary vulcanization ensuring zero volatile organic compounds, paired with mega-suction bases holding up to 10kg pull force.",
+      "differentiators": [
+        "Deep vacuum suction cup geometry engineered to stick firmly on wood, plastic, glass high chairs",
+        "Shore A 50-degree soft flex spoons gentle on infant teething gums",
+        "Secondary post-curing baking oven treatment (200°C for 4 hours) guaranteeing zero silicone smell",
+        "Over 48 on-trend Morandi and pastel Pantone shades pre-calibrated in liquid dosing systems"
+      ],
+      "compliance_requirements": [
+        "FDA 21 CFR 177.2600",
+        "German LFGB",
+        "EN 14372",
+        "BPA/BPS/PVC/Phthalate Free"
+      ],
+      "evidence_required": [
+        "LFGB 4-hour migration test",
+        "VOC zero-emission lab certificate",
+        "Tensile pull test log (spoons and bibs)"
+      ],
+      "risk_warnings": [
+        "Must state 'Platinum-cured Food Grade Silicone'; never use cheap peroxide-cured industrial silicone.",
+        "Highlight choking hazard prevention testing on all small components."
+      ],
+      "languages": [
+        "en",
+        "de",
+        "fr"
+      ],
+      "page_blueprint": {
+        "product_pages_count": 12,
+        "solution_pages_count": 5,
+        "process_pages_count": 4,
+        "case_studies_count": 3,
+        "guides_count": 6,
+        "trust_pages_count": 5
+      }
+    },
+    {
+      "id": "babytablewarefactory",
+      "domain": "babytablewarefactory.com",
+      "name": "Baby Tableware Factory (Multi-Material)",
+      "name_zh": "跨材料婴童餐饮用品综合供应站",
+      "group": "B",
+      "group_name": "产品、材料与场景垂直站",
+      "priority": "P2",
+      "phase": "Phase 3",
+      "launch_month": "M10-M12",
+      "status": "planned",
+      "positioning": "跨材料婴童餐具供应商站，面向希望一站式采购的买家。整合硅胶吸盘碗、麦秆分格盘、304医用不锈钢保温研磨碗与防摔水杯，依托耐科多产线优势提供统一样品、统一部件匹配与拼箱交付。",
+      "target_markets": [
+        "North America",
+        "United Kingdom",
+        "European Union",
+        "Australia"
+      ],
+      "target_buyers": [
+        "希望一站式采购全品类的母婴批发商",
+        "母婴连锁品牌产品采购部",
+        "跨境电商综合母婴店铺"
+      ],
+      "primary_cta": "Request One-Stop Infant Dining Procurement Catalog",
+      "secondary_cta": "Consult Multi-Material Cross-Matching Compatibility",
+      "keywords": {
+        "primary": "baby tableware manufacturer",
+        "secondary": [
+          "baby feeding products supplier",
+          "OEM toddler tableware",
+          "infant feeding set one stop factory"
+        ],
+        "long_tail": [
+          "stainless steel inner bowl silicone outer baby dish",
+          "complete baby weaning meal set manufacturer china",
+          "custom baby tableware gift box bundle oem",
+          "mixed material infant dinnerware wholesale"
+        ],
+        "intent_cluster": "One-Stop Multi-Material Procurement, Quality Consolidation & Bundling"
+      },
+      "unique_value_prop": "Single-source supply chain integration across silicone molding, composite injection, and 304 stainless steel processing for seamless color-matched baby dining bundles.",
+      "differentiators": [
+        "Integrated multi-workshop capacity eliminating multi-vendor coordination headaches",
+        "Unified color harmonisation ensuring silicone bib, composite plate, and stainless cutlery match 100%",
+        "Single consolidated quality inspection pass and single shipping bill of lading"
+      ],
+      "compliance_requirements": [
+        "FDA",
+        "LFGB",
+        "EN 14372",
+        "CPSIA",
+        "ISO 9001"
+      ],
+      "evidence_required": [
+        "Cross-material food contact compatibility audit",
+        "Consolidated AQL 1.0 test report"
+      ],
+      "risk_warnings": [
+        "Strictly differentiate from site #9 (siliconebabyfeedingset.com) which focuses solely on pure platinum silicone.",
+        "Emphasize the multi-material bundle synergy and supply chain consolidation advantages."
+      ],
+      "languages": [
+        "en",
+        "de"
+      ],
+      "page_blueprint": {
+        "product_pages_count": 12,
+        "solution_pages_count": 5,
+        "process_pages_count": 4,
+        "case_studies_count": 3,
+        "guides_count": 6,
+        "trust_pages_count": 5
+      }
+    },
+    {
+      "id": "siliconekitchenwarefactory",
+      "domain": "siliconekitchenwarefactory.com",
+      "name": "Silicone Kitchenware Factory",
+      "name_zh": "硅胶厨房用品与烘焙工具制造站",
+      "group": "B",
+      "group_name": "产品、材料与场景垂直站",
+      "priority": "P2",
+      "phase": "Phase 2",
+      "launch_month": "M5-M9",
+      "status": "planned",
+      "positioning": "硅胶厨房用品、烘焙模具与家居厨具制造站。涵盖耐高温硅胶铲勺、刮刀、耐热隔热手套、蛋糕烤垫与硅胶保鲜盖，重点呈现模具精度、耐温230°C测试、手柄包胶工艺与零售套盒上架。",
+      "target_markets": [
+        "United States",
+        "European Union",
+        "Australia",
+        "United Kingdom"
+      ],
+      "target_buyers": [
+        "厨具烹饪品牌采购经理",
+        "连锁百货厨卫部门买手",
+        "烘焙用品专门连锁渠道"
+      ],
+      "primary_cta": "Request Silicone Kitchenware Tooling & Price List",
+      "secondary_cta": "Download Heat-Resistance (230°C) Oven Test Protocol",
+      "keywords": {
+        "primary": "silicone kitchenware manufacturer",
+        "secondary": [
+          "custom silicone kitchen products",
+          "silicone bakeware OEM",
+          "heat resistant silicone spatula factory"
+        ],
+        "long_tail": [
+          "food grade silicone cooking utensils set wholesale",
+          "silicone spatula stainless steel handle oem",
+          "non stick silicone baking mat manufacturer china",
+          "commercial silicone cake mold bulk supplier"
+        ],
+        "intent_cluster": "High-Heat Cooking Safety, Overmolding Engineering & Retail Utensil Sets"
+      },
+      "unique_value_prop": "High-performance kitchen grade silicone rated from -40°C to 230°C without deformation or chemical leaching, engineered with hygienic seamless one-piece designs preventing bacterial buildup.",
+      "differentiators": [
+        "Seamless one-piece molding preventing grease trapping between head and handle",
+        "Overmolding expertise: Silicone over stainless steel core or acacia hardwood handles",
+        "Non-scratch surface protection safe for high-end non-stick ceramic and Teflon cookware"
+      ],
+      "compliance_requirements": [
+        "FDA 21 CFR 177.2600",
+        "German LFGB",
+        "French DGCCRF",
+        "Dishwasher Safe"
+      ],
+      "evidence_required": [
+        "230°C thermal stability testing report",
+        "Food contact migration certificate"
+      ],
+      "risk_warnings": [
+        "Clearly indicate oven temperature ceilings (max 230°C / 446°F); warn against direct stovetop open flames."
+      ],
+      "languages": [
+        "en",
+        "de"
+      ],
+      "page_blueprint": {
+        "product_pages_count": 12,
+        "solution_pages_count": 5,
+        "process_pages_count": 4,
+        "case_studies_count": 3,
+        "guides_count": 6,
+        "trust_pages_count": 5
+      }
+    },
+    {
+      "id": "ricehushtableware",
+      "domain": "ricehushtableware.com",
+      "name": "Rice Husk Tableware Specialist",
+      "name_zh": "稻壳复合材料餐具专门站",
+      "group": "B",
+      "group_name": "产品、材料与场景垂直站",
+      "priority": "P3",
+      "phase": "Phase 3",
+      "launch_month": "M10-M18",
+      "status": "planned",
+      "positioning": "稻壳复合材料餐具专业站。面向亚洲、澳新与北美生态产品渠道，详述农作物副产物稻壳的提纯研磨、自然质感肌理、物理耐用性边界及食品接触检测文件，主打差异化自然美学。",
+      "target_markets": [
+        "Australia",
+        "Japan",
+        "United States",
+        "Singapore",
+        "New Zealand"
+      ],
+      "target_buyers": [
+        "生态有机产品概念店买手",
+        "日系自然极简风生活品牌",
+        "注重天然农产废弃物循环的企业客户"
+      ],
+      "primary_cta": "Explore Rice Husk Tableware Spec & Testing Docs",
+      "secondary_cta": "Request Sample Kit with Natural Husk Texture",
+      "keywords": {
+        "primary": "rice husk tableware manufacturer",
+        "secondary": [
+          "rice husk dinnerware wholesale",
+          "custom rice husk cups",
+          "natural bio composite tableware factory"
+        ],
+        "long_tail": [
+          "eco rice husk coffee mug bulk supplier",
+          "natural grain rice fiber bowl set china",
+          "biodegradable agricultural byproduct dining products",
+          "earth tone rice husk plate manufacturer"
+        ],
+        "intent_cluster": "Agricultural Waste Upcycling, Organic Texture & Food Safety Boundary"
+      },
+      "unique_value_prop": "Upcycling agricultural rice husk byproduct into durable, dense, natural earth-tone tableware featuring visible organic grain flecks and smooth matte hand-feel.",
+      "differentiators": [
+        "Natural warm earthy aesthetic without synthetic dyes or pigments",
+        "High material density resisting oil absorption and food stain discoloration",
+        "Rigid structural feel comparable to heavy ceramic but at one-third the weight"
+      ],
+      "compliance_requirements": [
+        "FDA",
+        "LFGB",
+        "REACH Heavy Metals",
+        "BPA Free"
+      ],
+      "evidence_required": [
+        "Raw husk origin and processing traceability records",
+        "Stain resistance lab test data"
+      ],
+      "risk_warnings": [
+        "Clarify material boundaries: Rice husk dinnerware is reusable and long-lasting, not single-use disposable paper.",
+        "Conduct country-by-country food contact compliance check before entering specific markets."
+      ],
+      "languages": [
+        "en",
+        "ja"
+      ],
+      "page_blueprint": {
+        "product_pages_count": 12,
+        "solution_pages_count": 5,
+        "process_pages_count": 4,
+        "case_studies_count": 3,
+        "guides_count": 6,
+        "trust_pages_count": 5
+      }
+    },
+    {
+      "id": "platablewarefactory",
+      "domain": "platablewarefactory.com",
+      "name": "PLA & Compostable Tableware Factory",
+      "name_zh": "PLA与可堆肥产品线制造站",
+      "group": "B",
+      "group_name": "产品、材料与场景垂直站",
+      "priority": "P3",
+      "phase": "Phase 3",
+      "launch_month": "M10-M18",
+      "status": "planned",
+      "positioning": "PLA及工业可堆肥产品线制造站。专门面向有法定可堆肥采购规范的欧洲、北美及大型餐饮系统，仅展示有具体SKU产品级证据支持的堆肥认证（EN 13432/ASTM D6400），严格说明处置条件。",
+      "target_markets": [
+        "European Union (Germany, France, Italy)",
+        "United States (California, Washington)",
+        "Canada"
+      ],
+      "target_buyers": [
+        "受严苛禁塑令约束的欧洲餐饮集团",
+        "绿色活动策划与大型场馆餐饮承包商",
+        "主打零废弃理念的包装进口商"
+      ],
+      "primary_cta": "Request PLA Compostability Certification Dossier",
+      "secondary_cta": "Verify Industrial Composting Facility Compatibility",
+      "keywords": {
+        "primary": "PLA tableware manufacturer",
+        "secondary": [
+          "compostable tableware supplier",
+          "custom PLA cups and plates",
+          "polylactic acid dining products factory"
+        ],
+        "long_tail": [
+          "en 13432 certified compostable tableware wholesale",
+          "astm d6400 pla cutlery manufacturer china",
+          "commercial compostable party dining set oem",
+          "plant based polylactic acid drinkware supplier"
+        ],
+        "intent_cluster": "Industrial Composting Certification (EN 13432/ASTM D6400) & Single-Use Bans Compliance"
+      },
+      "unique_value_prop": "100% bio-based corn-starch derived Polylactic Acid (PLA) manufactured in compliance with international industrial composting standards EN 13432 and ASTM D6400.",
+      "differentiators": [
+        "Third-party verified DIN CERTCO / TUV Austria Seedling composting certification",
+        "Optimized heat-crystallized C-PLA formulation withstanding hot foods up to 85°C",
+        "Strict compliance with California AB 1201 environmental marketing claim requirements"
+      ],
+      "compliance_requirements": [
+        "EN 13432",
+        "ASTM D6400",
+        "BPI Certified",
+        "TUV Austria OK Compost",
+        "FDA Food Contact"
+      ],
+      "evidence_required": [
+        "Official DIN CERTCO certificate number",
+        "TUV Austria compostability test report"
+      ],
+      "risk_warnings": [
+        "CRITICAL: Must never make generic 'biodegradable' claims without citing industrial composting conditions.",
+        "Inform buyers that PLA requires commercial industrial composting facilities and will not compost in home backyard bins."
+      ],
+      "languages": [
+        "en",
+        "de",
+        "fr"
+      ],
+      "page_blueprint": {
+        "product_pages_count": 12,
+        "solution_pages_count": 5,
+        "process_pages_count": 4,
+        "case_studies_count": 3,
+        "guides_count": 6,
+        "trust_pages_count": 5
+      }
+    },
+    {
+      "id": "insulatedlunchbagfactory",
+      "domain": "insulatedlunchbagfactory.com",
+      "name": "Insulated Lunch Bag Factory",
+      "name_zh": "保温午餐袋与便当包制造站",
+      "group": "B",
+      "group_name": "产品、材料与场景垂直站",
+      "priority": "P3",
+      "phase": "Phase 3",
+      "launch_month": "M10-M18",
+      "status": "planned",
+      "positioning": "保温午餐袋及便当盒配套专用站。聚焦北美、英欧与澳洲学生返校及白领通勤场景，详解600D再生牛津布面料、食品级PEVA无缝热压防漏内胆、5mm EPE珍珠棉保温层以及“盒+袋”套装拼装定制方案。",
+      "target_markets": [
+        "United States",
+        "United Kingdom",
+        "Canada",
+        "Australia",
+        "Germany"
+      ],
+      "target_buyers": [
+        "返校季文具与箱包零售买手",
+        "便当盒品牌寻求配套包袋的采购商",
+        "企业礼品与促销箱包分销商"
+      ],
+      "primary_cta": "Get Bento + Thermal Bag Bundle Quote",
+      "secondary_cta": "Request Thermal Insulation Decay Test Curve (4h / 6h / 8h)",
+      "keywords": {
+        "primary": "insulated lunch bag manufacturer",
+        "secondary": [
+          "custom thermal lunch bag",
+          "lunch bag wholesale",
+          "recycled fabric cooler bag factory"
+        ],
+        "long_tail": [
+          "leak proof peva lined lunch tote bulk",
+          "custom printed kids insulated lunchbox bag oem",
+          "600d rpet eco thermal cooler bag supplier",
+          "lunch box and bag matching bundle wholesale"
+        ],
+        "intent_cluster": "Thermal Insulation Duration, Seamless Leakproof Lining & Bag+Bento Bundling"
+      },
+      "unique_value_prop": "High-density 5mm thermal insulation foam paired with ultrasonic seamless heat-sealed PEVA interior linings guaranteed zero leakage even when ice melts inside.",
+      "differentiators": [
+        "Hot-press seamless PEVA lining preventing liquid seepage into sewing seams",
+        "Thermal performance: Maintains cold foods under 10°C for up to 6 hours with standard ice pack",
+        "Turnkey bundle engineering: Perfectly sized internal cavities custom tailored to Naike bento box lines"
+      ],
+      "compliance_requirements": [
+        "FDA Food Contact PEVA",
+        "CPSIA Lead & Phthalates",
+        "GRS (Global Recycled Standard) for rPET",
+        "REACH"
+      ],
+      "evidence_required": [
+        "PEVA lining SGS migration test",
+        "Thermal decay temperature chamber log",
+        "Zipper 5,000-pull durability test"
+      ],
+      "risk_warnings": [
+        "Clarify in-house sewing workshop vs cooperative specialized cut-and-sew partners boundary.",
+        "Specify exterior water-repellent coating standards (PFC-free DWR)."
+      ],
+      "languages": [
+        "en",
+        "de"
+      ],
+      "page_blueprint": {
+        "product_pages_count": 12,
+        "solution_pages_count": 5,
+        "process_pages_count": 4,
+        "case_studies_count": 3,
+        "guides_count": 6,
+        "trust_pages_count": 5
+      }
+    },
+    {
+      "id": "ecopromotionalgifts",
+      "domain": "ecopromotionalgifts.com",
+      "name": "Eco Promotional Gifts Specialist",
+      "name_zh": "环保企业礼品与品牌赠品垂直站",
+      "group": "C",
+      "group_name": "礼赠、IP周边与定制制造站",
+      "priority": "P1",
+      "phase": "Phase 1",
+      "launch_month": "M2-M4",
+      "status": "planned",
+      "positioning": "环保企业礼品与品牌赠品专业站。服务欧美、中东、新加坡香港企业ESG活动与促销品经销商，按预算梯度（$1-$3、$3-$5、$5-$10+）、交付周期、品牌潘通色与低碳环保材质提供精准选品与真实项目案例。",
+      "target_markets": [
+        "United States",
+        "Germany",
+        "United Kingdom",
+        "Middle East (UAE, Saudi)",
+        "Singapore",
+        "Hong Kong"
+      ],
+      "target_buyers": [
+        "跨国企业ESG公关与品牌市场部",
+        "全球促销产品经销商（PPAI / PSI 会员）",
+        "国际展会与峰会活动策划公司"
+      ],
+      "primary_cta": "Calculate Eco Gift Campaign Budget & Request Virtual Mockup",
+      "secondary_cta": "Download Corporate ESG Merchandising Catalog",
+      "keywords": {
+        "primary": "eco promotional gifts manufacturer",
+        "secondary": [
+          "sustainable corporate gifts supplier",
+          "custom branded eco gifts",
+          "promotional eco tableware wholesale"
+        ],
+        "long_tail": [
+          "wheat straw promotional gifts under 3 dollars bulk",
+          "custom logo eco friendly employee welcome kit",
+          "ppai verified sustainable promotional merchandise factory",
+          "low carbon corporate giveaways china manufacturer"
+        ],
+        "intent_cluster": "Corporate ESG Gift Programs, Budget Tier Filtering & Fast Virtual Proofing"
+      },
+      "unique_value_prop": "High-impact, certified sustainable corporate gifts starting from $1.50 per unit, backed by 48-hour free digital virtual mockups, laser-etched custom logos, and FSC-certified gift box packaging.",
+      "differentiators": [
+        "Transparent budget pricing tiers: Starter Merch ($1-$3), Executive Sets ($5-$15), VIP Onboarding Kits ($20+)",
+        "48-hour digital virtual proofing turnaround with Pantone exact matching",
+        "Individually customized ESG carbon saving statement printed on each gift box"
+      ],
+      "compliance_requirements": [
+        "SEDEX SMETA Social Audit",
+        "RoHS",
+        "REACH",
+        "FSC Paper Packaging",
+        "Prop 65"
+      ],
+      "evidence_required": [
+        "SEDEX 4-pillar audit report",
+        "Logo print washability test log",
+        "FSC chain-of-custody certificate"
+      ],
+      "risk_warnings": [
+        "Respect client NDA: Anonymize high-profile corporate client logos unless written approval is archived.",
+        "Strict lead-time buffer warnings for event-driven tight deadlines."
+      ],
+      "languages": [
+        "en",
+        "de",
+        "ar"
+      ],
+      "page_blueprint": {
+        "product_pages_count": 12,
+        "solution_pages_count": 5,
+        "process_pages_count": 4,
+        "case_studies_count": 3,
+        "guides_count": 6,
+        "trust_pages_count": 5
+      }
+    },
+    {
+      "id": "custompvcgifts",
+      "domain": "custompvcgifts.com",
+      "name": "Custom Soft PVC & Rubber Gifts Factory",
+      "name_zh": "软胶与PVC定制礼品制造站",
+      "group": "C",
+      "group_name": "礼赠、IP周边与定制制造站",
+      "priority": "P2",
+      "phase": "Phase 3",
+      "launch_month": "M10-M18",
+      "status": "planned",
+      "positioning": "软PVC、橡胶类定制礼品专业工厂站。面向全球促销品代理商、纪念品进口商与动漫周边公司，攻坚2D平面/3D立体微量射出点胶工艺、潘通精准调色、金属配件装配、3天极速打样与大单快出交付。",
+      "target_markets": [
+        "Global",
+        "United States",
+        "European Union",
+        "Japan",
+        "South America"
+      ],
+      "target_buyers": [
+        "促销礼品进口商",
+        "主题乐园与旅游景区纪念品采购",
+        "动漫游戏IP授权周边开发商"
+      ],
+      "primary_cta": "Upload Artwork for Free 3D PVC Prototype Quote",
+      "secondary_cta": "Request PVC Color Swatches & Material Safety Data Sheet (MSDS)",
+      "keywords": {
+        "primary": "custom PVC gifts manufacturer",
+        "secondary": [
+          "PVC keychain factory",
+          "custom rubber promotional products",
+          "soft PVC luggage tag supplier"
+        ],
+        "long_tail": [
+          "custom 3d pvc rubber keychain bulk factory",
+          "custom soft pvc coaster manufacturer china",
+          "micro injection molded pvc souvenir wholesale",
+          "eco friendly non phthalate pvc gifts supplier"
+        ],
+        "intent_cluster": "2D/3D Micro-Injection Tooling, Rapid Mold Sampling & Low Unit Cost OEM"
+      },
+      "unique_value_prop": "Automated 12-color micro-injection dispensing robots delivering ultra-crisp line detail down to 0.1mm, using eco-friendly non-phthalate EN 71 certified PVC compound.",
+      "differentiators": [
+        "High-speed CNC aluminum mold carving ensuring 72-hour physical sample delivery",
+        "Zero-bleed color separation between adjacent compartments using proprietary curing heaters",
+        "100% compliant with EU REACH Annex XVII phthalate restrictions and CPSIA lead limits"
+      ],
+      "compliance_requirements": [
+        "EN 71-3 Heavy Metals",
+        "CPSIA Phthalates",
+        "REACH Phthalate Free (Non-Toxic PVC)",
+        "MSDS"
+      ],
+      "evidence_required": [
+        "SGS Phthalate-free lab test",
+        "Micro-injection mold precision measurement report"
+      ],
+      "risk_warnings": [
+        "Must state 'Phthalate-free Non-toxic PVC'; never use non-compliant recycled industrial scraps.",
+        "Check customer artwork for trademark authorization prior to creating molds."
+      ],
+      "languages": [
+        "en",
+        "es",
+        "ja"
+      ],
+      "page_blueprint": {
+        "product_pages_count": 12,
+        "solution_pages_count": 5,
+        "process_pages_count": 4,
+        "case_studies_count": 3,
+        "guides_count": 6,
+        "trust_pages_count": 5
+      }
+    },
+    {
+      "id": "customshoecharms",
+      "domain": "customshoecharms.com",
+      "name": "Custom Shoe Charms & Clog Accs Factory",
+      "name_zh": "鞋花、洞洞鞋装饰扣与DIY配饰专精站",
+      "group": "C",
+      "group_name": "礼赠、IP周边与定制制造站",
+      "priority": "P2",
+      "phase": "Phase 3",
+      "launch_month": "M10-M18",
+      "status": "planned",
+      "positioning": "鞋花、装饰扣、洞洞鞋DIY配件专业制造站。面向美欧日韩鞋服配饰品牌、潮玩电商与礼赠渠道，主打多系列主题开发、底扣高牢固度超声波焊接、儿童防吞咽防窒息警示测试、吸塑泡壳吊卡包装与快时尚爆款速供。",
+      "target_markets": [
+        "United States",
+        "European Union",
+        "Japan",
+        "South Korea",
+        "Brazil"
+      ],
+      "target_buyers": [
+        "鞋类配件与潮牌服装配件买手",
+        "Amazon / TikTok Shop 洞洞鞋配饰爆款卖家",
+        "动漫IP周边配饰授权代理商"
+      ],
+      "primary_cta": "Download 2026 Trending Shoe Charm Catalog",
+      "secondary_cta": "Request Custom Back-Button Mold Sample Kit",
+      "keywords": {
+        "primary": "custom shoe charms manufacturer",
+        "secondary": [
+          "PVC shoe charms wholesale",
+          "custom clog charms factory",
+          "shoe buckle accessories supplier"
+        ],
+        "long_tail": [
+          "custom soft pvc croc shoe charm bulk oem",
+          "ultrasonic welded shoe charm button manufacturer",
+          "trending cute pvc shoe accessories wholesale",
+          "blister card retail packaging shoe charms factory"
+        ],
+        "intent_cluster": "Back-Button Pull-Off Strength, Trendy Collection Drops & Blister Packaging"
+      },
+      "unique_value_prop": "Industrial-grade ultrasonic button welding resisting up to 15 lbs pull force, paired with non-toxic vibrant PVC detailing and turn-key blister card display packaging.",
+      "differentiators": [
+        "Patented one-piece co-molded or ultrasonic welded back-buttons that never detach from the charm",
+        "Over 2,000 in-stock trending novelty molds ready for immediate custom packaging",
+        "Small parts child-safety compliance testing (ASTM F963 / EN 71 choke tube tests)"
+      ],
+      "compliance_requirements": [
+        "ASTM F963 Small Parts",
+        "EN 71-1 Physical & Mechanical",
+        "CPSIA Phthalates & Lead"
+      ],
+      "evidence_required": [
+        "Button pull-test lab records (15+ lbs force)",
+        "Small parts cylinder testing documentation"
+      ],
+      "risk_warnings": [
+        "MANDATORY: Prominently display choking hazard warnings on packaging: 'Warning: Small parts. Not for children under 3 years.'",
+        "Do NOT use the trademarked word 'Crocs™' in domains or as product brand names; use 'clog shoes' or 'hole shoes'."
+      ],
+      "languages": [
+        "en",
+        "ja",
+        "ko"
+      ],
+      "page_blueprint": {
+        "product_pages_count": 12,
+        "solution_pages_count": 5,
+        "process_pages_count": 4,
+        "case_studies_count": 3,
+        "guides_count": 6,
+        "trust_pages_count": 5
+      }
+    },
+    {
+      "id": "licensedmerchandisefactory",
+      "domain": "licensedmerchandisefactory.com",
+      "name": "Audited Licensed Merchandise Factory",
+      "name_zh": "审厂背书与IP周边制造能力站",
+      "group": "C",
+      "group_name": "礼赠、IP周边与定制制造站",
+      "priority": "P2",
+      "phase": "Phase 2",
+      "launch_month": "M5-M9",
+      "status": "planned",
+      "positioning": "面向品牌方、国际授权商和被授权采购商的审厂与IP周边制造能力专精站。重点展现耐科持有的 Disney FAMA、Coca-Cola SGP 绿色评级、Sedex 4-pillar 验厂资质、严格保密生产车间、色差控制与防混货全追溯流程。",
+      "target_markets": [
+        "Global",
+        "United States",
+        "European Union",
+        "Japan"
+      ],
+      "target_buyers": [
+        "全球知名IP特许授权商（Licensees）",
+        "跨国娱乐与体育赛事周边采购商",
+        "要求通过第三方严苛验厂的大型跨国品牌采购代表"
+      ],
+      "primary_cta": "Verify Factory Audit Qualifications & Request OEM Proposal",
+      "secondary_cta": "Request Confidential Social Compliance Summary Report",
+      "keywords": {
+        "primary": "licensed merchandise manufacturer",
+        "secondary": [
+          "audited promotional products factory",
+          "custom character merchandise OEM",
+          "disney audited gifts factory"
+        ],
+        "long_tail": [
+          "disney fama certified injection molding factory china",
+          "coca cola sgp approved tableware supplier",
+          "ethical audited bento box manufacturer sedex smeta",
+          "confidential character merchandise oem factory"
+        ],
+        "intent_cluster": "Social Compliance Auditing Credentials, IP Protection SOP & Secure Manufacturing"
+      },
+      "unique_value_prop": "Pre-qualified tier-1 social audit credentials (Disney FAMA, Coca-Cola SGP, Sedex SMETA) paired with secure isolated production zones and strict IP protection protocols.",
+      "differentiators": [
+        "Active Disney FAMA authorization (Code W128-4829-1) for licensed merchandise production",
+        "Coca-Cola Social Responsibility Audit (SGP) Green Rating with zero major non-conformances",
+        "Gated workshop with 24/7 CCTV surveillance, biometric access, and 100% scrap shredding destruction SOP"
+      ],
+      "compliance_requirements": [
+        "Disney FAMA",
+        "Coca-Cola SGP",
+        "Sedex 4-Pillar SMETA",
+        "ISO 9001",
+        "ISO 14001"
+      ],
+      "evidence_required": [
+        "Official FAMA authorization registry number",
+        "Coca-Cola SGP audit audit report excerpt",
+        "SMETA corrective action plan closure"
+      ],
+      "risk_warnings": [
+        "ABSOLUTELY NO claiming of owning Disney, Coca-Cola, or other trademarks. Must clearly state: 'Jinjiang Naike Gifts is an audited manufacturing facility approved to produce authorized merchandise for verified license holders.'",
+        "All client project showcases require written approval; otherwise use anonymized silhouettes."
+      ],
+      "languages": [
+        "en",
+        "de",
+        "ja"
+      ],
+      "page_blueprint": {
+        "product_pages_count": 12,
+        "solution_pages_count": 5,
+        "process_pages_count": 4,
+        "case_studies_count": 3,
+        "guides_count": 6,
+        "trust_pages_count": 5
+      }
+    },
+    {
+      "id": "privatelabeltableware",
+      "domain": "privatelabeltableware.com",
+      "name": "Private Label Tableware Incubator",
+      "name_zh": "跨境电商与DTC私牌餐具解决方案站",
+      "group": "D",
+      "group_name": "高价值买家解决方案站",
+      "priority": "P1",
+      "phase": "Phase 1",
+      "launch_month": "M2-M4",
+      "status": "planned",
+      "positioning": "服务Amazon、Shopify、DTC和新兴成长型品牌的私牌餐具开发孵化站。重点解决起订量门槛（低至500-1000套）、差异化外观改款、高质感开箱包装设计、合规检测报告挂靠、3D电商渲染素材支持与亚马逊FBA条码打标贴标入仓协同。",
+      "target_markets": [
+        "United States",
+        "Canada",
+        "United Kingdom",
+        "Germany",
+        "Australia"
+      ],
+      "target_buyers": [
+        "Amazon Top 500 家居厨具卖家",
+        "Shopify/TikTok DTC 环保新锐品牌创始人",
+        "众筹（Kickstarter/Indiegogo）生活方式项目发起人"
+      ],
+      "primary_cta": "Book Private Label Launch Consultation & Starter Kit",
+      "secondary_cta": "Download DTC Tableware Launch Playbook (0 to $1M)",
+      "keywords": {
+        "primary": "private label tableware manufacturer",
+        "secondary": [
+          "custom dinnerware brand",
+          "low MOQ tableware OEM",
+          "amazon fba dining products supplier"
+        ],
+        "long_tail": [
+          "turnkey private label bento box for amazon fba",
+          "custom color dinnerware sets low moq 500 pcs",
+          "custom branded eco tableware with barcode packaging",
+          "white label biodegradable kitchenware supplier china"
+        ],
+        "intent_cluster": "Low MOQ Incubation, Custom Unboxing Packaging & Amazon FBA Logistics Prep"
+      },
+      "unique_value_prop": "Turn-key Private Label Incubation: Low 500-unit starter MOQ, custom Pantone colors, high-end unboxing packaging design, pre-attached Amazon FBA barcodes, and 4K photorealistic 3D product renders.",
+      "differentiators": [
+        "Flexible low-risk launch tier: 500 pcs test order using in-house standard tooling with custom laser logo and custom sleeve packaging",
+        "Complete Amazon FBA prep service: FNSKU labeling, suffocation warning polybags, master carton barcode compliance",
+        "In-house 3D studio providing 6 photorealistic e-commerce lifestyle renders saving $1,500 in photography costs"
+      ],
+      "compliance_requirements": [
+        "Amazon Product Safety Compliance",
+        "FDA 21 CFR",
+        "LFGB",
+        "FSC Packaging",
+        "ISTA 3A Transit Testing"
+      ],
+      "evidence_required": [
+        "Amazon FBA lab testing pass reports",
+        "ISTA 3A carton drop test certification",
+        "Food contact declarations"
+      ],
+      "risk_warnings": [
+        "Do NOT use Amazon, Shopify, or FBA trademarks in the domain name or imply endorsement.",
+        "Clear payment milestones: 30% deposit with order, 70% before shipment or against BL copy."
+      ],
+      "languages": [
+        "en",
+        "de"
+      ],
+      "page_blueprint": {
+        "product_pages_count": 12,
+        "solution_pages_count": 5,
+        "process_pages_count": 4,
+        "case_studies_count": 3,
+        "guides_count": 6,
+        "trust_pages_count": 5
+      }
+    },
+    {
+      "id": "retailreadytableware",
+      "domain": "retailreadytableware.com",
+      "name": "Retail Ready Tableware Solutions",
+      "name_zh": "大型商超与连锁零售上架即售站",
+      "group": "D",
+      "group_name": "高价值买家解决方案站",
+      "priority": "P1",
+      "phase": "Phase 2",
+      "launch_month": "M5-M9",
+      "status": "planned",
+      "positioning": "面向大型商超、连锁百货和跨国进口商的一站式“上架即售（Retail-Ready Packaging / RRP）”项目站。主打符合沃尔玛、Costco、Aldi、Target标准的地堆彩盒（PDQ）、条码校验、跌落防损包装、EDI数据对接、多SKU高密度拼柜与严格验货放行。",
+      "target_markets": [
+        "United States",
+        "Canada",
+        "United Kingdom",
+        "European Union",
+        "Australia"
+      ],
+      "target_buyers": [
+        "大型跨国商超采购副总裁/品类总监",
+        "跨国百货零售集团驻华采购办（IPO）",
+        "大型日用品进口分销巨头采购委员会"
+      ],
+      "primary_cta": "Request Supermarket Compliance & Container Consolidation Plan",
+      "secondary_cta": "Book EDI & Retail-Ready Packaging Engineering Audit",
+      "keywords": {
+        "primary": "retail ready tableware supplier",
+        "secondary": [
+          "supermarket tableware manufacturer",
+          "retail packaging OEM",
+          "bulk tableware container supplier"
+        ],
+        "long_tail": [
+          "walmart target compliant dinnerware factory china",
+          "pdq display tray retail tableware wholesale",
+          "gs1 barcoded eco dining products manufacturer",
+          "multi sku container consolidation tableware supplier"
+        ],
+        "intent_cluster": "High-Volume Container Economics, EDI/ERP Integration & Retail Display Compliance"
+      },
+      "unique_value_prop": "High-volume containerized manufacturing excellence: 40HQ container load optimization saving 18% ocean freight, certified GS1-128 retail barcoding, and heavy-duty pre-assembled PDQ counter displays ready for store aisles.",
+      "differentiators": [
+        "Custom 3D container packing simulator maximizing cubic meter utilization for mixed-SKU 40HQ loads",
+        "Complete EDI (Electronic Data Interchange) order tracking compatibility",
+        "Retail-Ready Packaging (RRP / PDQ) engineered to pass ISTA 3A transit tests without exterior outer carton damage",
+        "Strict AQL 1.0 Major / 2.5 Minor final inspection with container loading supervision (CLS) reports"
+      ],
+      "compliance_requirements": [
+        "GS1 Barcoding",
+        "ISTA 3A / 6-Amazon.com",
+        "SEDEX SMETA",
+        "BSCI",
+        "FDA / LFGB",
+        "FSC Mixed Paper"
+      ],
+      "evidence_required": [
+        "AQL 1.0 container loading inspection certificate",
+        "ISTA 3A transit simulation lab test",
+        "GS1 barcode verification report"
+      ],
+      "risk_warnings": [
+        "Do NOT claim to be the exclusive supplier of Walmart or Target without documented authorization.",
+        "Ensure barcode verification complies strictly with ISO/IEC 15416 Grade A/B standards."
+      ],
+      "languages": [
+        "en",
+        "de",
+        "fr"
+      ],
+      "page_blueprint": {
+        "product_pages_count": 12,
+        "solution_pages_count": 5,
+        "process_pages_count": 4,
+        "case_studies_count": 3,
+        "guides_count": 6,
+        "trust_pages_count": 5
+      }
+    }
+  ]
+}

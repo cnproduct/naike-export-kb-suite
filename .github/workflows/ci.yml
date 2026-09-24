@@ -1,0 +1,28 @@
+name: CI Suite Verification
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Run Suite Comprehensive Verification
+        run: node scripts/validate-suite.mjs
+
+      - name: Test Batch Content Generation Across 20 Sites
+        run: node scripts/test-generation.mjs
+
+      - name: Test MCP Server Interface
+        run: node mcp/index.mjs --test
